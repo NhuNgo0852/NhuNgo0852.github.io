@@ -1,0 +1,37 @@
+:root{
+    --lightpink: #F2BFB3;
+    --darkpink: #D99791;
+    --lightbrown: #BF8F84;
+    --darkbrown: #733B36;
+    --grey: #D9D9D9;
+    --purple: #401621;
+}
+/*footer*/
+.info{
+    background-color: var(--darkpink);
+    padding: 50px;
+    display: grid;
+    grid-template-areas: 
+        "time address quicklinks";
+    margin-top: 200px;
+    color: white;
+    font-size: 1.5vw;
+}
+/*Social link*/
+.social-link{
+    text-decoration: none;
+    color: white;
+}
+.time, #quicklinks{
+    list-style-type: none;
+}
+.q-link:link, .q-link:visited{
+    color: white;
+    text-decoration: none;
+}
+.q-link:hover, .q-link:active{
+    color: var(--darkbrown);
+}
+#quicklinks{
+    list-style-type: none;
+}

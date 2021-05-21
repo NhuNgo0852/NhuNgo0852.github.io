@@ -1,0 +1,98 @@
+/*main*/
+:root{
+    --lightpink: #F2BFB3;
+    --darkpink: #D99791;
+    --lightbrown: #BF8F84;
+    --darkbrown: #733B36;
+    --grey: #D9D9D9;
+    --purple: #401621;
+}
+/*content*/
+.content{
+    display: grid;
+    grid-template-areas: 
+        "text1 img1"
+        "img2 text2"
+        "text3 img3"
+        "img4 text4"
+        "text5 img5";
+    margin: 40px;
+    gap: 30px;
+}
+/*media????*/
+@media screen and (max-width: 620px) {
+    .content{
+        grid-template-areas:
+            "text1"
+            "img1"
+            "text2"
+            "img2"
+            "text3"
+            "img3"
+            "text4"
+            "img4"
+            "text5"
+            "img5";
+    }
+}
+/*Text group*/
+#nail{
+    grid-area: text1;
+}
+#lash{
+    grid-area: text2;
+}
+#eyebrows{
+    grid-area: text3;
+}
+#waxing{
+    grid-area: text4;
+}
+#makeup{
+    grid-area: text5;
+}
+/*text*/
+.text-group{
+    font-size: 1.5vw;
+    padding: 50px;
+}
+/*Price button*/
+.price:link, .price:visited{
+    text-decoration: none;
+    background-color: var(--lightpink);
+    border-radius: 2px;
+    color: var(--purple);
+}
+.price:hover, .price:active{
+    border: 2px solid var(--purple);
+    background-color: var(--purple);
+    color: white;
+}
+.link-price{
+    text-align: center;
+}
+/*image*/
+.image{
+    position: inherit; /*The inherit keyword specifies that a property should inherit its value from its parent element*/
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--darkpink);
+    align-self: center;
+    justify-self: center;
+    margin: 20px;
+}
+#img1{
+    grid-area: img1;
+}
+#img2{
+    grid-area: img2;
+}
+#img3{
+    grid-area: img3;
+}
+#img4{
+    grid-area: img4;
+}
+#img5{
+    grid-area: img5;
+}

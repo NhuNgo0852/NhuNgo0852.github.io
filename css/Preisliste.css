@@ -1,0 +1,218 @@
+/*main*/
+:root{
+    --lightpink: #F2BFB3;
+    --darkpink: #D99791;
+    --lightbrown: #BF8F84;
+    --darkbrown: #733B36;
+    --grey: #D9D9D9;
+    --purple: #401621;
+}
+/*head title*/
+.price-list > h3{
+    text-align: center;
+}
+h3{
+    font-size: 1.5vw;
+}
+/*Price list*/
+.price-list{
+    margin-top: 70px;
+    text-align: center;
+}
+/*link Price*/
+.main-menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px;
+    margin: 50px 300px;
+}
+/*Box*/
+.box{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5vw;
+}
+.box:link, .box:visited{
+    text-decoration: none;
+    border: 1px solid var(--lightpink);
+    background-color: var(--lightpink);
+    color: var(--purple);
+}
+.box:hover, .box:active{
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+    color: white;
+}
+/*Title*/
+.title{
+    border: 1px solid var(--lightpink);
+    background-color: var(--darkpink);
+    color: var(--purple);
+}
+.t-padding{
+    padding: 0px 100px;
+}
+.grid-price{
+    display: flex;
+    justify-content: center;
+}  
+/*Nail studio*/
+#nail-studio{
+    position: initial;
+    display: grid;
+    grid-template-areas: 
+        "new acryl gel"
+        "name1 euro1 euro1"
+        "art art art"
+        "name2 euro2 ."
+        "care care care"
+        "name3 euro3 .";
+    align-self: center;
+    justify-self: center;
+    border: 2px dotted var(--purple);
+    background-color: var(--lightpink);
+    border-radius: 10px;
+    padding: 30px 50px;
+}
+/*Grid area*/
+#art{
+    grid-area: art;
+}
+.name2{
+    grid-area: name2;
+}
+.euro2{
+    grid-area: euro2;
+}
+#care{
+    grid-area: care;
+}
+.name3{
+    grid-area: name3;
+}
+.euro3{
+    grid-area: euro3;
+}
+/*List*/
+.list{
+    list-style-type: none;
+    font-size: 1.5vw;
+    text-align: right;
+    margin-right: 40px;
+}
+.list-name{
+    text-align: left;
+    list-style-type: none;
+    font-size: 1.5vw;
+    margin-left: 40px;
+}
+/*schönheit*/
+#others{
+    display: grid;
+    grid-template-areas:
+        "makeup makeup lash lash"
+        "eyebrows eyebrows new-model new-model"
+        "name4 euro4 name7 euro7"
+        "lips lips refill refill"
+        "name5 euro5 name8 euro8"
+        "eyes eyes . ."
+        "name6 euro6 . ."
+        "lifting lifting waxing waxing"
+        "name9  euro9 name10 euro10"; 
+    border: 2px dotted var(--purple);
+    background-color: var(--lightpink);
+    border-radius: 10px;
+    padding: 30px 50px;
+}
+@media screen and (max-width: 650px) {
+    #others{
+        grid-template-areas:
+            "makeup makeup"
+            "eyebrows eyebrows"
+            "name4 euro4"
+            "lips lips"
+            "name5 euro5"
+            "eyes eyes"
+            "name6 euro6"
+            "lash lash"
+            "new-model new-model"
+            "name7 euro7"
+            "refill refill"
+            "name8 euro8"
+            "lifting lifting"
+            "name9 euro9"
+            "waxing waxing"
+            "name10 euro10";
+    }
+}
+/*Grid area*/
+#makeup{
+    grid-area: makeup;
+}
+#lash{
+    grid-area: lash;
+}
+#eyebrows{
+    grid-area: eyebrows;
+}
+.name4{
+    grid-area: name4;
+}
+.euro4{
+    grid-area: euro4;
+}
+#lips{
+    grid-area: lips;
+}
+.name5{
+    grid-area: name5;
+}
+.euro5{
+    grid-area: euro5;
+}
+#eyes{
+    grid-area: eyes;
+}
+.name6{
+    grid-area: name6;
+}
+.euro6{
+    grid-area: euro6;
+}
+#new-model{
+    grid-area: new-model;
+}
+.name7{
+    grid-area: name7;
+}
+.euro7{
+    grid-area: euro7;
+}
+#refill{
+    grid-area: refill;
+}
+.name8{
+    grid-area: name8;
+}
+.euro8{
+    grid-area: euro8;
+}
+#lifting{
+    grid-area: lifting;
+}
+.name9{
+    grid-area: name9;
+}
+.euro9{
+    grid-area: euro9;
+}
+#waxing{
+    grid-area: waxing;
+}
+.name10{
+    grid-area: name10;
+}
+.euro10{
+    grid-area: euro10;
+}

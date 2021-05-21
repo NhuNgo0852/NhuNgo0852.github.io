@@ -1,0 +1,8 @@
+/*gg-map & info*/
+#contact-info{
+    display: flex;
+}
+.more{
+    display: flex;
+    text-align: center;
+}
