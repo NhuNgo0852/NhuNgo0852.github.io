@@ -12,24 +12,28 @@
     padding: 50px;
     display: grid;
     grid-template-areas: 
-        "time address quicklinks";
+        "time address quicklinks newsletter";
     margin-top: 200px;
     color: white;
     font-size: 1.5vw;
 }
 /*Social link*/
-.social-link{
+.social_link{
     text-decoration: none;
     color: white;
 }
+.social_link:hover, .social_link:active{
+    color: var(--purple);
+}
+/* Styling Time & Quicklinks*/
 .time, #quicklinks{
     list-style-type: none;
 }
-.q-link:link, .q-link:visited{
+.q_link:link, .q_link:visited{
     color: white;
     text-decoration: none;
 }
-.q-link:hover, .q-link:active{
+.q_link:hover, .q_link:active{
     color: var(--darkbrown);
 }
 #quicklinks{

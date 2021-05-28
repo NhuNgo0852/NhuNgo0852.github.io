@@ -1,8 +1,124 @@
-/*gg-map & info*/
-#contact-info{
-    display: flex;
+:root{
+    --lightpink: #F2BFB3;
+    --darkpink: #D99791;
+    --lightbrown: #BF8F84;
+    --darkbrown: #733B36;
+    --grey: #D9D9D9;
+    --purple: #401621;
+}/*gg-map & info*/
+#contact_info{
+    display: grid;
+    grid-template-areas:
+        "gg_map social";
 }
-.more{
-    display: flex;
+@media screen and (max-width: 600px) {
+    #contact_info{
+        grid-template-areas:
+            "gg_map"
+            "social";
+    }
+}
+#social{
+    justify-self: center;
+}
+.social_text{
+    list-style-type: none;
+}
+/*Contact*/
+.contact_form{
+    font-size: 1.5vw;
     text-align: center;
+}
+/*Input*/
+input[type=text], textarea{
+    width: 50%;
+    border-radius: 3px;
+    padding: 10px;
+}
+/*Button styling*/
+button{
+    margin: 20px 0px;
+}
+/*Radio styling*/
+.info_form{
+    margin: 20px;
+}
+/*Hidden the browser's default radio button*/
+input[type="radio"]{
+    display: none;
+}
+/*Creat a custom radio button*/
+.radio_group{
+    position: relative;
+    padding-left: 30px;
+    padding-right : 20px;
+    cursor: pointer;
+}
+.checkmark{
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--grey);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: color .5s ease;
+}
+/*Creat a circle, hidden when not checked*/
+input[type="radio"]:checked + .checkmark{
+    border-color: var(--lightpink);
+}
+/*Styling radio button when checked*/
+.checkmark::after{
+    content: "";
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    background: var(--lightpink);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 2px;
+    transition: transform .5s ease;
+    transform: scale(0);
+}
+input[type="radio"]:checked + .checkmark::after{
+    transform: scale(1);
+}
+/*Checkbox styling*/
+/*Hidden browser's checkbox default*/
+input[type="checkbox"]{
+    display: none;
+}
+.checkbox_custom >span{
+    margin-left: 30px;
+}
+/*Creat custom checkbox*/
+.checkbox_custom{
+    position: relative;
+    cursor: pointer;
+}
+.checkbox_mark{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border: 2px solid var(--grey);
+    border-radius: 50%;
+    display: inline-block;
+    transition: color .5s ease;
+}
+/*Creat a circle, hidden when not checked*/
+input[type="checkbox"]:checked + .checkbox_mark{
+    border-color: var(--lightpink);
+}
+/*Styling checkbox when checked*/
+.checkbox_mark::after{
+    content: url('https://api.iconify.design/ion:checkmark-circle.svg?color=%23F2BFB3');
+    display: none;
+}
+input[type="checkbox"]:checked + .checkbox_mark::after{
+    display: block;
+    transform: scale(1);
 }

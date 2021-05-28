@@ -6,34 +6,21 @@
     --grey: #D9D9D9;
     --purple: #401621;
 }
-/*Icon*/
-.icon{
-    font-size: 2vw;
-    padding-left: 20px;
-}
 /*Bar*/
-.nav-title{
-    display: grid;
-    grid-template-areas:
-        "logo item-group item-group";
-    text-align: center;
-    height: 100px;
-    align-content: center;
-    margin-top: 100px;
-}
-#item-group{
+.item_group{
     display: grid;
     grid-template-areas: 
-        "home cost academy contact login lookup map";
-    margin-top: 100px;
-    margin-bottom: 100px;
+        "logo home cost academy contact login lookup map"
+        "banner_text banner_text banner_text banner_text banner_text banner_text banner_text banner_text"
+        "rabatt rabatt rabatt rabatt rabatt rabatt rabatt rabatt";
 }
 /*Banner*/
 #banner{
     width: 100%;
     height: auto;
 }
-.banner-text{
+.banner_text{
+    grid-area: banner_text;
     position: relative;
 }
 /*Termin*/
@@ -78,6 +65,7 @@
 }
 /*Rabatt*/
 #rabatt{
+    grid-area: rabatt;
     list-style-type: none;
     text-align: center;
     margin-bottom: 150px;
@@ -87,15 +75,16 @@
     padding: 10px;
 }
 /*nav-item*/
-.nav-item{
+.nav_item{
     font-size: 2vw;
-    padding: 40px;
+    align-self: center;
+    text-align: center;
 }
-.nav-item:link, .nav-item:visited{
+.nav_item:link, .nav_item:visited{
     text-decoration: none;
     color: black;
 }
-.nav-item:hover, .nav-item:active{
+.nav_item:hover, .nav_item:active{
     color: var(--lightpink);
 }
 #home{
@@ -109,4 +98,13 @@
 }
 #contact{
     grid-area: contact;
+}
+#login{
+    grid-area: login;
+}
+#lookup{
+    grid-area: lookup;
+}
+#map{
+    grid-area: map;
 }

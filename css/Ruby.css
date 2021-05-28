@@ -52,24 +52,24 @@
     grid-area: text5;
 }
 /*text*/
-.text-group{
+.text_group{
     font-size: 1.5vw;
     padding: 50px;
 }
 /*Price button*/
-.price:link, .price:visited{
+.price{
     text-decoration: none;
-    background-color: var(--lightpink);
-    border-radius: 2px;
+    border-radius: 3px;
     color: var(--purple);
 }
-.price:hover, .price:active{
-    border: 2px solid var(--purple);
-    background-color: var(--purple);
+.link_price:hover, .link_price:active{
+    border: 2px solid var(--lightpink);
+    background-color: var(--lightpink);
     color: white;
+    border-radius: 3px;
 }
-.link-price{
-    text-align: center;
+.narrow_button{
+    display: inline-block;
 }
 /*image*/
 .image{

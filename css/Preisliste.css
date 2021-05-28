@@ -8,19 +8,19 @@
     --purple: #401621;
 }
 /*head title*/
-.price-list > h3{
+.price_list > h3{
     text-align: center;
 }
 h3{
     font-size: 1.5vw;
 }
 /*Price list*/
-.price-list{
+.price_list{
     margin-top: 70px;
     text-align: center;
 }
 /*link Price*/
-.main-menu{
+.main_menu{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 10px;
@@ -50,15 +50,15 @@ h3{
     background-color: var(--darkpink);
     color: var(--purple);
 }
-.t-padding{
+.t_padding{
     padding: 0px 100px;
 }
-.grid-price{
+.grid_price{
     display: flex;
     justify-content: center;
 }  
 /*Nail studio*/
-#nail-studio{
+#nail_studio{
     position: initial;
     display: grid;
     grid-template-areas: 
@@ -101,7 +101,7 @@ h3{
     text-align: right;
     margin-right: 40px;
 }
-.list-name{
+.list_name{
     text-align: left;
     list-style-type: none;
     font-size: 1.5vw;
@@ -112,7 +112,7 @@ h3{
     display: grid;
     grid-template-areas:
         "makeup makeup lash lash"
-        "eyebrows eyebrows new-model new-model"
+        "eyebrows eyebrows new_model new_model"
         "name4 euro4 name7 euro7"
         "lips lips refill refill"
         "name5 euro5 name8 euro8"
@@ -136,7 +136,7 @@ h3{
             "eyes eyes"
             "name6 euro6"
             "lash lash"
-            "new-model new-model"
+            "new_model new_model"
             "name7 euro7"
             "refill refill"
             "name8 euro8"
@@ -180,8 +180,8 @@ h3{
 .euro6{
     grid-area: euro6;
 }
-#new-model{
-    grid-area: new-model;
+#new_model{
+    grid-area: new_model;
 }
 .name7{
     grid-area: name7;
