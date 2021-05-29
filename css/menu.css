@@ -14,6 +14,27 @@
         "banner_text banner_text banner_text banner_text banner_text banner_text banner_text banner_text"
         "rabatt rabatt rabatt rabatt rabatt rabatt rabatt rabatt";
 }
+#home{
+    grid-area: home;
+}
+#cost{
+    grid-area: cost;
+}
+#acadamy{
+    grid-area: academy;
+}
+#contact{
+    grid-area: contact;
+}
+#login{
+    grid-area: login;
+}
+#lookup{
+    grid-area: lookup;
+}
+#map{
+    grid-area: map;
+}
 /*Banner*/
 #banner{
     width: 100%;
@@ -86,27 +107,6 @@
 }
 .nav_item:hover, .nav_item:active{
     color: var(--lightpink);
-}
-#home{
-    grid-area: home;
-}
-#cost{
-    grid-area: cost;
-}
-#acadamy{
-    grid-area: academy;
-}
-#contact{
-    grid-area: contact;
-}
-#login{
-    grid-area: login;
-}
-#lookup{
-    grid-area: lookup;
-}
-#map{
-    grid-area: map;
 }
 /*Map*/
 #map:link, #map:visited{

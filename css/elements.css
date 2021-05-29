@@ -28,8 +28,8 @@ input[type=text]{
 }
 .footer_input{
     border: 1px solid var(--darkpink);
+    display: inline-block;
 }
-/*Input*/
 textarea{
     width: 50%;
     border: 2px solid var(--grey);

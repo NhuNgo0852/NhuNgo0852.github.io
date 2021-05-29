@@ -17,10 +17,11 @@
     color: white;
     font-size: 1.5vw;
 }
-/*Social link*/
+/*Social link & icon*/
 .social_link{
     text-decoration: none;
     color: white;
+    font-size: 1.5vw;
 }
 .social_link:hover, .social_link:active{
     color: var(--purple);
@@ -44,4 +45,7 @@
     position: flex-end;
     font-size: 5vw;
     color: #5BD963;
+}
+.icon{
+    margin-top: 4px;
 }
