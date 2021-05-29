@@ -108,3 +108,17 @@
 #map{
     grid-area: map;
 }
+/*Map*/
+#map:link, #map:visited{
+    text-decoration: none;
+    color: black;
+}
+#map:hover, #map:active{
+    color: var(--lightpink);
+}
+#lookup{
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    padding: 5px;
+}

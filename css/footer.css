@@ -39,3 +39,9 @@
 #quicklinks{
     list-style-type: none;
 }
+/*Pop-up Whatsapp*/
+.app_popup{
+    position: flex-end;
+    font-size: 5vw;
+    color: #5BD963;
+}

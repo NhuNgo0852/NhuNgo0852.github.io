@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../css/Preisliste.css">
 	<link rel="stylesheet" href="../css/menu.css">
 	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/elements.css">
 	<!-- Ion icon-->
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<!-- sript?-->
@@ -37,8 +38,8 @@
 				<span class="iconify" data-icon="ion:search-outline" data-inline="false"></span>
 			</div>
 			<!--Map-->
-			<div id="map" class="nav_item">
-				<a href="https://goo.gl/maps/srGfFciio7wz15We6"> 
+			<div class="nav_item">
+				<a id="map" href="https://goo.gl/maps/srGfFciio7wz15We6"> 
 					<span class="iconify" data-icon="ion:location-outline" data-inline="false"></span>
 				</a>
 			</div>
@@ -247,7 +248,7 @@
 						<li> ab 55€ </li>
 					</div>
 					<div id="lifting">
-						<h3 class="title"> AUGENBRAUEN- UND WIMPERNLIFTING </h3>
+						<h3 class="title"> AUGENBRAUEN- & WIMPERNLIFTING </h3>
 					</div>
 					<div class="list_name name9">
 						<li> Wimpernlifting mit Keratin </li>
@@ -345,8 +346,11 @@
 					<p> 
 						Melden Sie an, um exklusive Angebote zu bekommen!
 					</p>
-					<label for="newsletter"></label>
-					<input name="newsletter" placeholder="Bitte Ihre Email einträgen">
+					<div>
+						<label for="newsletter"></label>
+						<input class="footer_input" type="text" name="newsletter" placeholder="Bitte Ihre Email eintragen" required>
+					</div>
+					<button type="submit" class="button"> Bestätigen </button>
 				</div>
 			</section>
 		</div>
@@ -358,8 +362,8 @@
 			<p>
 			Wenn Sie auf „Annehmen“ klicken, erlauben Sie uns, Ihr Nutzungsverhalten auf dieser Website zu erfassen. Dadurch können wir unsere Webseite verbessern und Werbung für Sie personalisieren. <br> Wenn Sie auf „Ablehnen“ klicken, verwenden wir nur Session-Cookies, die der Verbesserung der Nutzerfreundlichkeit sowie der statistischen Reichweitenmessung dienen.
 			</p>
-			<button type="accept"> Annehmen </button>
-			<button type="refuse"> Ablehnen</button>
+			<button type="accept" class="button"> Annehmen </button>
+			<button type="refuse" class="button"> Ablehnen</button>
 		</div>
 	</footer>
 </body>

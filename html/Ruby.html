@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../css/Ruby.css">
 	<link rel="stylesheet" href="../css/menu.css">
 	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/elements.css">
 	<!-- Ion icon-->
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<!-- sript?-->
@@ -37,8 +38,8 @@
 				<span class="iconify" data-icon="ion:search-outline" data-inline="false"></span>
 			</div>
 			<!--Map-->
-			<div id="map" class="nav_item">
-				<a href="https://goo.gl/maps/srGfFciio7wz15We6"> 
+			<div class="nav_item">
+				<a id="map" href="https://goo.gl/maps/srGfFciio7wz15We6"> 
 					<span class="iconify" data-icon="ion:location-outline" data-inline="false"></span>
 				</a>
 			</div>
@@ -72,12 +73,9 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, diam eu scelerisque bibendum, mauris leo lacinia enim, vel consequat diam velit vitae sem. Morbi sed nulla magna. In molestie id ex ac lobortis. Donec lacus lectus, blandit quis magna at, efficitur blandit neque. Duis id odio in magna luctus vulputate. Cras dictum odio et mauris pulvinar sodales.
 					</p>
 				</div>
-				<div class="narrow_button">
-					<button class="link_price">
-						<a class="price" href="./Preisliste.html"> Preisliste </a>
-					</button>
-					<span class="iconify" data-icon="ion:arrow-forward-outline" data-inline="false"></span>
-				</div>
+				<button class="button">
+					<a class="price" href="./Preisliste.html"> Preisliste </a>
+				</button>
 			</div>
 			<!-- Wimpern-->
 			<img class="image" id="img2" src="../img/lash1.jpg">
@@ -88,12 +86,9 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, diam eu scelerisque bibendum, mauris leo lacinia enim, vel consequat diam velit vitae sem. Morbi sed nulla magna. In molestie id ex ac lobortis. Donec lacus lectus, blandit quis magna at, efficitur blandit neque. Duis id odio in magna luctus vulputate. Cras dictum odio et mauris pulvinar sodales.
 					</p>
 				</div>
-				<div class="narrow_button">
-					<button class="link_price">
-						<a class="price" href="./Preisliste.html"> Preisliste </a>
-					</button>
-					<span class="iconify" data-icon="ion:arrow-forward-outline" data-inline="false"></span>
-				</div>
+				<button class="button">
+					<a class="price" href="./Preisliste.html"> Preisliste </a>
+				</button>
 			</div>
 			<!--Augenbrauen-->
 			<img class="image" id="img3" src="../img/Augenbrauen.jpg">
@@ -104,12 +99,9 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, diam eu scelerisque bibendum, mauris leo lacinia enim, vel consequat diam velit vitae sem. Morbi sed nulla magna. In molestie id ex ac lobortis. Donec lacus lectus, blandit quis magna at, efficitur blandit neque. Duis id odio in magna luctus vulputate. Cras dictum odio et mauris pulvinar sodales.
 					</p>
 				</div>
-				<div class="narrow_button">
-					<button class="link_price">
-						<a class="price" href="./Preisliste.html"> Preisliste </a>
-					</button>
-					<span class="iconify" data-icon="ion:arrow-forward-outline" data-inline="false"></span>
-				</div>
+				<button class="button">
+					<a class="price" href="./Preisliste.html"> Preisliste </a>
+				</button>
 			</div>
 			<!--Waxing-->
 			<img class="image" id="img4" src="../img/waxing.webp">
@@ -120,12 +112,9 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, diam eu scelerisque bibendum, mauris leo lacinia enim, vel consequat diam velit vitae sem. Morbi sed nulla magna. In molestie id ex ac lobortis. Donec lacus lectus, blandit quis magna at, efficitur blandit neque. Duis id odio in magna luctus vulputate. Cras dictum odio et mauris pulvinar sodales.
 					</p>
 				</div>
-				<div class="narrow_button">
-					<button class="link_price">
-						<a class="price" href="./Preisliste.html"> Preisliste </a>
-					</button>
-					<span class="iconify" data-icon="ion:arrow-forward-outline" data-inline="false"></span>
-				</div>
+				<button class="button">
+					<a class="price" href="./Preisliste.html"> Preisliste </a>
+				</button>
 			</div>
 			<!--Permanent Make up-->
 			<img class="image" id="img5" src="../img/lip.jpg">
@@ -136,12 +125,9 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, diam eu scelerisque bibendum, mauris leo lacinia enim, vel consequat diam velit vitae sem. Morbi sed nulla magna. In molestie id ex ac lobortis. Donec lacus lectus, blandit quis magna at, efficitur blandit neque. Duis id odio in magna luctus vulputate. Cras dictum odio et mauris pulvinar sodales.
 					</p>
 				</div>
-				<div class="narrow_button">
-					<button class="link_price">
-						<a class="price" href="./Preisliste.html"> Preisliste </a>
-					</button>
-					<span class="iconify" data-icon="ion:arrow-forward-outline" data-inline="false"></span>
-				</div>
+				<button class="button">
+					<a class="price" href="./Preisliste.html"> Preisliste </a>
+				</button>
 			</div>
 		</div>
 	</main>
@@ -208,8 +194,11 @@
 					<p> 
 						Melden Sie an, um exklusive Angebote zu bekommen!
 					</p>
-					<label for="newsletter"></label>
-					<input name="newsletter" placeholder="Bitte Ihre Email einträgen">
+					<div>
+						<label for="newsletter"></label>
+						<input class="footer_input" type="text" name="newsletter" placeholder="Bitte Ihre Email eintragen" required>
+					</div>
+					<button type="submit" class="button"> Bestätigen </button>
 				</div>
 			</section>
 		</div>
@@ -221,8 +210,8 @@
 			<p>
 			Wenn Sie auf „Annehmen“ klicken, erlauben Sie uns, Ihr Nutzungsverhalten auf dieser Website zu erfassen. Dadurch können wir unsere Webseite verbessern und Werbung für Sie personalisieren. <br> Wenn Sie auf „Ablehnen“ klicken, verwenden wir nur Session-Cookies, die der Verbesserung der Nutzerfreundlichkeit sowie der statistischen Reichweitenmessung dienen.
 			</p>
-			<button type="accept"> Annehmen </button>
-			<button type="refuse"> Ablehnen</button>
+			<button type="accept" class="button"> Annehmen </button>
+			<button type="refuse" class="button"> Ablehnen</button>
 		</div>
 	</footer>
 </body>

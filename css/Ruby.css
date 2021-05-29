@@ -59,17 +59,13 @@
 /*Price button*/
 .price{
     text-decoration: none;
-    border-radius: 3px;
-    color: var(--purple);
 }
-.link_price:hover, .link_price:active{
-    border: 2px solid var(--lightpink);
-    background-color: var(--lightpink);
+.price:link, .price:visited{
+    color: black;
+}
+.price:hover, .price:active{
     color: white;
-    border-radius: 3px;
-}
-.narrow_button{
-    display: inline-block;
+    transition: color .2s ease;
 }
 /*image*/
 .image{
