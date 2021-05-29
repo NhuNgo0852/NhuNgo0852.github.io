@@ -5,6 +5,7 @@
     --darkbrown: #733B36;
     --grey: #D9D9D9;
     --purple: #401621;
+    --green: #5BD963;
 }
 /*Button*/
 /*Button styling*/
@@ -105,7 +106,6 @@ input[type="checkbox"]{
     border: 2px solid var(--grey);
     border-radius: 50%;
     display: inline-block;
-    transition: transform .5s ease;
 }
 /*Creat a circle, hidden when not checked*/
 input[type="checkbox"]:checked + .checkbox_mark{
@@ -118,6 +118,6 @@ input[type="checkbox"]:checked + .checkbox_mark{
 }
 input[type="checkbox"]:checked + .checkbox_mark::after{
     display: block;
-    transform: scale(1);
     margin-top: -1px;
 }
+
