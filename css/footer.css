@@ -51,6 +51,8 @@
 }
 .chat > p{
     border: 1px solid var(--green);
+    border-radius: 5px;
+    text-align: center;
     color: white;
+    padding: 5px 0px;
 }
-/*test*/
