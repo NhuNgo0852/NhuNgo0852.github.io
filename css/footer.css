@@ -12,11 +12,32 @@
     background-color: var(--darkpink);
     padding: 50px;
     display: grid;
-    grid-template-areas: 
-        "time address quicklinks newsletter";
+    grid-template-areas:
+        "time address"
+        "quicklinks newsletter";
     margin-top: 200px;
     color: white;
     font-size: 1.5vw;
+}
+@media screen and (min-width: 400px){
+    .info{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "time address quicklinks newsletter";
+        gap: 0pc 10px;
+    }
+}
+#time{
+    grid-area: time;
+}
+#address{
+    grid-area: address;
+}
+#quicklinks{
+    grid-area: quicklinks;
+}
+#newsletter{
+    grid-area: newsletter;
 }
 /*Social link & icon*/
 .social_link{
@@ -90,7 +111,7 @@
     }
 }
 .chat_icon:hover{
-    animation: wiggle .5s;
+    animation: wiggle 1s infinite;
 }
 /*Animation*/
 @keyframes wiggle{
