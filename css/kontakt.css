@@ -16,13 +16,14 @@
 #contact_info{
     display: grid;
     grid-template-areas:
-        "gg_map social";
+        "gg_map"
+        "social";
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 550px) {
     #contact_info{
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-            "gg_map"
-            "social";
+            "gg_map social";
     }
 }
 #social{
@@ -33,7 +34,7 @@
 .social_text{
     list-style-type: none;
     position: relative;
-    text-align: center;
+    text-align: 50%;
 }
 .social_text > p, li{
     font-size: 1.5vw;
@@ -41,9 +42,6 @@
 .icon_inline{
     display: inline-block;
     padding: 0px 5px;
-}
-.checkbox_custom > span{
-    font-size: 1.5vw;
 }
 /*Contact*/
 .contact_form{

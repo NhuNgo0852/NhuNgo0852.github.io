@@ -10,6 +10,7 @@
 /*Bar*/
 .item_group{
     display: grid;
+    grid-template-columns: repeat(8, 1fr);
     grid-template-areas: 
         "logo home cost academy contact login lookup map"
         "banner_text banner_text banner_text banner_text banner_text banner_text banner_text banner_text"

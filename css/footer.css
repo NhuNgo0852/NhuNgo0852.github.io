@@ -13,18 +13,19 @@
     padding: 50px;
     display: grid;
     grid-template-areas:
-        "time address"
-        "quicklinks newsletter";
+        "time" 
+        "address"
+        "quicklinks"
+        "newsletter";
     margin-top: 200px;
     color: white;
     font-size: 1.5vw;
 }
-@media screen and (min-width: 400px){
+@media screen and (min-width: 550px){
     .info{
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
             "time address quicklinks newsletter";
-        gap: 0pc 10px;
     }
 }
 #time{
@@ -81,14 +82,14 @@
     animation: fadeup 1.5s forwards;
 }
 .large_circle{
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border: 1px solid var(--green);
     background-color: var(--green);
     border-radius: 50%;
     opacity: 0;
     animation: fadeup 1s forwards;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .small_circle{
     width: 5px;
@@ -98,7 +99,7 @@
     border-radius: 50%;
     opacity: 0;
     animation: fadeup .7s forwards;
-    margin-left: 50px;
+    margin-left: 35px;
 }
 /*Animation*/
 @keyframes fadeup{

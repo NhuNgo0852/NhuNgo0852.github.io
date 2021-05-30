@@ -8,14 +8,15 @@
     --purple: #401621;
     --green: #5BD963;
 }
-/*head title*/
+/*Price list*/
+.price_list > h2{
+    text-align: center;
+    font-size: 2vw;
+}
 .price_list > h3{
     text-align: center;
-}
-h3{
     font-size: 1.5vw;
 }
-/*Price list*/
 .price_list{
     margin-top: 70px;
     text-align: center;
@@ -24,17 +25,20 @@ h3{
 .main_menu{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 10px;
-    margin: 50px 300px;
+    margin: 0px 50px;
+    text-align: center;
+}
+/*Box list*/
+.box_list > h3{
+    text-align: center;
+    font-size: 2vw;
 }
 /*Box*/
-.box{
+.box:link, .box:visited{
     border-radius: 5px;
     margin: 10px;
-    padding: 10px;
+    padding: 10px 5px;
     font-size: 1.5vw;
-}
-.box:link, .box:visited{
     text-decoration: none;
     border: 1px solid var(--lightpink);
     background-color: var(--lightpink);
