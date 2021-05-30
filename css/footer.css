@@ -49,10 +49,61 @@
     bottom: 10px;
     right: 40px;
 }
-.chat > p{
+.hallo{
     border: 1px solid var(--green);
+    background-color: var(--green);
     border-radius: 5px;
     text-align: center;
     color: white;
     padding: 5px 0px;
+    opacity: 0;
+    animation: fadeup 1.5s forwards;
+}
+.large_circle{
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    border-radius: 50%;
+    opacity: 0;
+    animation: fadeup 1s forwards;
+    margin-left: 30px;
+}
+.small_circle{
+    width: 5px;
+    height: 5px;
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    border-radius: 50%;
+    opacity: 0;
+    animation: fadeup .7s forwards;
+    margin-left: 50px;
+}
+/*Animation*/
+@keyframes fadeup{
+    0% {
+        transform: translateY(1.5vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.chat_icon:hover{
+    animation: wiggle .5s;
+}
+/*Animation*/
+@keyframes wiggle{
+    0% {
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(15deg);
+    }
+    66%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
