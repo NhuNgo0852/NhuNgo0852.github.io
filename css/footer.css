@@ -9,16 +9,14 @@
 }
 /*footer*/
 .info{
-    background-color: var(--darkpink);
+    background-color: var(--lightpink);
     padding: 50px;
     display: grid;
     grid-template-areas:
-        "time" 
-        "address"
-        "quicklinks"
-        "newsletter";
+        "time address"
+        "quicklinks newsletter";
     margin-top: 200px;
-    color: white;
+    color: black;
     font-size: 1.5vw;
 }
 @media screen and (min-width: 550px){
@@ -33,6 +31,7 @@
 }
 #address{
     grid-area: address;
+    padding: 0px 5px;
 }
 #quicklinks{
     grid-area: quicklinks;
@@ -43,18 +42,18 @@
 /*Social link & icon*/
 .social_link{
     text-decoration: none;
-    color: white;
+    color:black;
     font-size: 1.5vw;
 }
 .social_link:hover, .social_link:active{
-    color: var(--purple);
+    color: white;
 }
 /* Styling Time & Quicklinks*/
 .time, #quicklinks{
     list-style-type: none;
 }
 .q_link:link, .q_link:visited{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .q_link:hover, .q_link:active{
@@ -128,4 +127,12 @@
     100%{
         transform: rotate(0deg);
     }
+}
+/*Map*/
+#map:link, #map:visited{
+    text-decoration: none;
+    color: black;
+}
+#map:hover, #map:active{
+    color: white;
 }

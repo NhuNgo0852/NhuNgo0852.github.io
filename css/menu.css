@@ -10,11 +10,11 @@
 /*Bar*/
 .item_group{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
-        "logo home cost academy contact login lookup map"
-        "banner_text banner_text banner_text banner_text banner_text banner_text banner_text banner_text"
-        "rabatt rabatt rabatt rabatt rabatt rabatt rabatt rabatt";
+        "logo home cost academy contact"
+        "banner_text banner_text banner_text banner_text banner_text"
+        "rabatt rabatt rabatt rabatt rabatt";
 }
 #home{
     grid-area: home;
@@ -27,15 +27,6 @@
 }
 #contact{
     grid-area: contact;
-}
-#login{
-    grid-area: login;
-}
-#lookup{
-    grid-area: lookup;
-}
-#map{
-    grid-area: map;
 }
 /*Banner*/
 #banner{
@@ -148,18 +139,4 @@
 }
 .nav_item:hover, .nav_item:active{
     color: var(--lightpink);
-}
-/*Map*/
-#map:link, #map:visited{
-    text-decoration: none;
-    color: black;
-}
-#map:hover, #map:active{
-    color: var(--lightpink);
-}
-#lookup{
-    border: 1px solid black;
-    border-radius: 20px;
-    display: flex;
-    padding: 5px;
 }

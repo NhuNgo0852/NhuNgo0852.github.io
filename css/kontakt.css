@@ -12,19 +12,27 @@
 #gg_map{
     text-align: center;
 }
+#gg_map > iframe{
+    width: 450px;
+    height: 300px;
+}
 /*Contact info*/
 #contact_info{
     display: grid;
     grid-template-areas:
         "gg_map"
         "social";
+    background-color: var(--grey);
 }
 @media screen and (min-width: 550px) {
     #contact_info{
-        background-color: var(--grey);
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "gg_map social";
+    }
+    #gg_map > iframe{
+        width: 600px;
+        height: 400px;
     }
 }
 /*Social and Icon Whatsapp & Instagram*/
@@ -42,7 +50,6 @@
 }
 .icon_inline{
     display: inline-block;
-    padding: 0px 5px;
 }
 /*Contact*/
 .contact_form{

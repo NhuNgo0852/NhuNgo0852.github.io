@@ -45,8 +45,8 @@
     color: var(--purple);
 }
 .box:hover, .box:active{
-    border: 1px solid var(--purple);
-    background-color: var(--purple);
+    border: 1px solid var(--darkpink);
+    background-color: var(--darkpink);
     color: white;
 }
 /*Title*/

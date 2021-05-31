@@ -58,10 +58,8 @@
     padding: 50px;
 }
 /*Price button*/
-.price{
-    text-decoration: none;
-}
 .price:link, .price:visited{
+    text-decoration: none;
     color: black;
 }
 .price:hover, .price:active{
