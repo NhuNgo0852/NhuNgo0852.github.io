@@ -109,14 +109,14 @@
     transform: translateY(-50%);
 }
 .text1{
-    animation: 6s slidedown 0s infinite;
+    animation: 9s slidedown 0s infinite;
 }
 .text2{
-    animation: 6s slidedown 2s infinite;
+    animation: 9s slidedown 3s infinite;
 }
 
 .text3{
-    animation: 6s slidedown 4s infinite;
+    animation: 9s slidedown 6s infinite;
 }
 @keyframes slidedown{
     0%{
