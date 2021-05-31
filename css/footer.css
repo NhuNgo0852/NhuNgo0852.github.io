@@ -15,15 +15,16 @@
     grid-template-areas:
         "time address"
         "quicklinks newsletter";
+        gap: 0px 5px;
     margin-top: 200px;
     color: black;
-    font-size: 1.5vw;
 }
 @media screen and (min-width: 550px){
     .info{
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
-            "time address quicklinks newsletter";
+            "address time quicklinks newsletter";
+        font-size: 1.5vw;
     }
 }
 #time{
@@ -31,7 +32,6 @@
 }
 #address{
     grid-area: address;
-    padding: 0px 5px;
 }
 #quicklinks{
     grid-area: quicklinks;
@@ -43,7 +43,6 @@
 .social_link{
     text-decoration: none;
     color:black;
-    font-size: 1.5vw;
 }
 .social_link:hover, .social_link:active{
     color: white;

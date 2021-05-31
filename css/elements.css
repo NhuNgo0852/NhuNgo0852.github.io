@@ -14,7 +14,6 @@
     padding: 5px 15px;
     border: 1px solid var(--grey);
     border-radius: 20px;
-    font-size: 1.5vw;
 }
 .button:hover{
     background-color: var(--darkpink);
@@ -28,7 +27,6 @@
     width: 50%;
     border-radius: 3px;
     padding: 10px;
-    font-size: 1.5vw;
 }
 .footer_input{
     padding: 10px 20px;
@@ -40,7 +38,6 @@ textarea{
     border: 2px solid var(--grey);
     border-radius: 3px;
     padding: 10px;
-    font-size: 1.5vw;
 }
 /*Radio & Checkbox*/
 /*Radio styling*/
