@@ -15,6 +15,7 @@
         "logo home cost academy contact"
         "banner_text banner_text banner_text banner_text banner_text"
         "rabatt rabatt rabatt rabatt rabatt";
+    overflow-wrap: break-word;
 }
 #home{
     grid-area: home;
