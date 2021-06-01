@@ -92,25 +92,14 @@
     grid-area: img5;
 }
 /*Membership*/
-.bonus_karte{
-    opacity: 0.4;
-    width: 100%;
-    height: auto;
-}
 .membership{
-    position: relative;
-}
-.thoa_img{
-    position: absolute;
-    border: 1px solid black;
-    border-radius: 50%;
-    top: 20%;
-    right: 69%;
+    display: flex;
+    background-color: #BF7069;
+    margin-top: 100px;
 }
 .text_right{
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    font-size: 3vw;
-    color: var(--purple);
+    font-size: 2.5vw;
+    color: white;
+    align-self: center;
+    justify-content: center;
 }
