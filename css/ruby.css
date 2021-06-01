@@ -96,10 +96,10 @@
     display: flex;
     background-color: #BF7069;
     margin-top: 100px;
+    align-items: center;
+    justify-content: center;
 }
 .text_right{
     font-size: 2.5vw;
     color: white;
-    align-self: center;
-    justify-content: center;
 }
