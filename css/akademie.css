@@ -49,22 +49,56 @@ h2{
     width: 100%;
     height: auto;
 }
-/*photo*/
-.photo2 > p{
-    padding: 80px 0px;
+/*Photo Animation*/
+.photo{
+    opacity: 0;
 }
-.photo4 > p{
-    padding: 50px 0px;
+@keyframes fadein{
+    0%{
+        transform: translateZ(1.5vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
-.photo6 > p{
-    padding: 120px 0px;
+.photo1{
+    animation: 3s fadein 0s forwards;
 }
-.photo7 > p{
-    padding: 50px 0px;
+.photo2{
+    animation: 3s fadein 1s forwards;
 }
-.photo8 > p{
-    padding: 50px 0px;
+.photo3{
+    animation: 3s fadein 2s forwards;
 }
+.photo4{
+    animation: 3s fadein 3s forwards;
+}
+.photo5{
+    animation: 3s fadein 4s forwards;
+}
+.photo6{
+    animation: 3s fadein 5s forwards;
+}
+.photo7{
+    animation: 3s fadein 6s forwards;
+}
+.photo8{
+    animation: 3s fadein 7s forwards;
+}
+.photo9{
+    animation: 3s fadein 8s forwards;
+}
+.photo10{
+    animation: 3s fadein 9s forwards;
+}
+.photo11{
+    animation: 3s fadein 10s forwards;
+}
+.photo12{
+    animation: 3s fadein 11s forwards;
+}
+
 /*Text*/
 .text{
     text-align: center;
