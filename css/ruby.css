@@ -43,13 +43,13 @@
 #lash{
     grid-area: text2;
 }
-#eyebrows{
+#makeup{
     grid-area: text3;
 }
 #waxing{
     grid-area: text4;
 }
-#makeup{
+#eyebrows{
     grid-area: text5;
 }
 /*text*/
