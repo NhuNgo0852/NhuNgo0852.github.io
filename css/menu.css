@@ -85,7 +85,8 @@
     margin-bottom: 150px;
     display: flex;
     background-color: black;
-    padding: 20px;
+    padding: 50px;
+    font-size: 3vw;
 }
 .text1, .text2, .text3{
     color: white;
@@ -128,9 +129,9 @@
 }
 /*nav-item*/
 .nav_item{
-    font-size: 2vw;
     align-self: center;
     text-align: center;
+    font-size: 2.5vw;
 }
 .nav_item:link, .nav_item:visited{
     text-decoration: none;

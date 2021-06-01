@@ -14,6 +14,7 @@
     padding: 5px 15px;
     border: 1px solid var(--grey);
     border-radius: 20px;
+    font-size: 2vw;
 }
 .button:hover{
     background-color: var(--darkpink);
@@ -27,11 +28,13 @@
     width: 50%;
     border-radius: 3px;
     padding: 10px;
+    font-size: 2vw;
 }
 .footer_input{
     padding: 10px 20px;
     border: 1px solid var(--lightpink);
     display: inline-block;
+    font-size: 2vw;
 }
 textarea{
     width: 50%;
@@ -53,8 +56,8 @@ textarea{
     cursor: pointer;
 }
 .checkmark{
-    height: 12px;
-    width: 12px;
+    height: 25px;
+    width: 25px;
     border: 2px solid var(--grey);
     border-radius: 50%;
     display: inline-block;
@@ -94,17 +97,14 @@ textarea{
     margin-left: 30px;
 }
 /*Creat custom checkbox*/
-.checkbox_custom > span{
-    font-size: 1.5vw;
-}
 .checkbox_custom{
     position: relative;
     cursor: pointer;
 }
 .checkbox_mark{
     position: absolute;
-    height: 16px;
-    width: 16px;
+    height: 24px;
+    width: 24px;
     border: 2px solid var(--grey);
     border-radius: 50%;
     display: inline-block;
@@ -115,11 +115,12 @@ textarea{
 }
 /*Styling checkbox when checked*/
 .checkbox_mark::after{
-    content: url('https://api.iconify.design/ion:checkmark-circle.svg?color=%23F2BFB3');
+    content: url('https://api.iconify.design/mdi:checkbox-marked-circle.svg?color=%23F2BFB3&height=24');
     display: none;
 }
 .checkbox_input:checked + .checkbox_mark::after{
     display: block;
-    margin-top: -1px;
+    margin-top: -11px;
+    margin-right: -0.5px;
 }
 

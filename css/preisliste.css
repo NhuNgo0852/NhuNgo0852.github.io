@@ -9,14 +9,6 @@
     --green: #5BD963;
 }
 /*Price list*/
-.price_list > h2{
-    text-align: center;
-    font-size: 2vw;
-}
-.price_list > h3{
-    text-align: center;
-    font-size: 1.5vw;
-}
 .price_list{
     margin-top: 70px;
     text-align: center;
@@ -29,7 +21,7 @@
     text-align: center;
 }
 /*Box list*/
-.box_list > h3{
+.box_list{
     text-align: center;
     font-size: 2vw;
 }
@@ -38,7 +30,6 @@
     border-radius: 5px;
     margin: 10px;
     padding: 10px 5px;
-    font-size: 1.5vw;
     text-decoration: none;
     border: 1px solid var(--lightpink);
     background-color: var(--lightpink);
@@ -61,6 +52,7 @@
 .grid_price{
     display: flex;
     justify-content: center;
+    font-size: 2vw;
 }  
 /*Nail studio*/
 #nail_studio{
@@ -102,14 +94,12 @@
 /*List*/
 .list{
     list-style-type: none;
-    font-size: 1.5vw;
     text-align: right;
     margin-right: 40px;
 }
 .list_name{
     text-align: left;
     list-style-type: none;
-    font-size: 1.5vw;
     margin-left: 40px;
 }
 /*schönheit*/

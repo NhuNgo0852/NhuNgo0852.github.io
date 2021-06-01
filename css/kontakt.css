@@ -17,26 +17,33 @@
     height: 300px;
 }
 /*Contact info*/
-.info_form{
-    margin: 20px;
-}
 #contact_info{
     display: grid;
     grid-template-areas:
         "gg_map"
         "social";
     background-color: var(--grey);
+    font-size: 2vw;
 }
 @media screen and (min-width: 550px) {
     #contact_info{
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "gg_map social";
+        padding: 10px 0px;
     }
     #gg_map > iframe{
         width: 600px;
         height: 400px;
     }
+}
+/*Contact form*/
+.contact_form{
+    text-align: center;
+    font-size: 2vw;
+}
+.info_form{
+    margin: 20px;
 }
 /*Social and Icon Whatsapp & Instagram*/
 #social{
@@ -48,14 +55,6 @@
     list-style-type: none;
     text-align: center;
 }
-.social_text > p{
-    font-size: 1.5vw;
-}
 .icon_inline{
     display: inline-block;
-}
-/*Contact*/
-.contact_form{
-    font-size: 1.5vw;
-    text-align: center;
 }

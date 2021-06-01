@@ -54,13 +54,14 @@
 }
 /*text*/
 .text_group{
-    font-size: 1.25vw;
     padding: 50px;
+    font-size: 2vw;
 }
 /*Price button*/
 .price:link, .price:visited{
     text-decoration: none;
     color: black;
+    font-size: 2vw;
 }
 .price:hover, .price:active{
     color: white;

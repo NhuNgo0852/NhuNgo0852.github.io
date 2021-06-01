@@ -24,6 +24,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
             "address time quicklinks newsletter";
+        font-size: 2vw;
     }
 }
 #time{

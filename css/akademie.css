@@ -8,7 +8,8 @@
     --green: #5BD963;
 }
 /*Course*/
-h2{
+.academy{
+    font-size: 2vw;
     text-align: center;
 }
 /*border*/
@@ -19,9 +20,6 @@ h2{
     padding: 40px;
 }
 /*Border style*/
-.box_academy > h2{
-    padding-bottom: 40px;
-}
 .border{
     color: var(--purple);
     border-radius: 5px;
@@ -39,6 +37,7 @@ h2{
     background-color: var(--darkpink);
     color: white;
 }
+/*Academy*/
 /*grid image*/
 .img_academy{
     display: grid;
@@ -63,51 +62,42 @@ h2{
     }
 }
 .photo1{
-    animation: 3s fadein 0s forwards;
+    animation: 1s fadein 0s forwards;
 }
 .photo2{
-    animation: 3s fadein 1s forwards;
+    animation: 1s fadein 0.5s forwards;
 }
 .photo3{
-    animation: 3s fadein 2s forwards;
+    animation: 1s fadein 1s forwards;
 }
 .photo4{
-    animation: 3s fadein 3s forwards;
+    animation: 1s fadein 1.5s forwards;
 }
 .photo5{
-    animation: 3s fadein 4s forwards;
+    animation: 1s fadein 2s forwards;
 }
 .photo6{
-    animation: 3s fadein 5s forwards;
+    animation: 1s fadein 2.5s forwards;
 }
 .photo7{
-    animation: 3s fadein 6s forwards;
+    animation: 1s fadein 3s forwards;
 }
 .photo8{
-    animation: 3s fadein 7s forwards;
+    animation: 1s fadein 3.5s forwards;
 }
 .photo9{
-    animation: 3s fadein 8s forwards;
+    animation: 1s fadein 4s forwards;
 }
 .photo10{
-    animation: 3s fadein 9s forwards;
+    animation: 1s fadein 4.5s forwards;
 }
 .photo11{
-    animation: 3s fadein 10s forwards;
+    animation: 1s fadein 5s forwards;
 }
 .photo12{
-    animation: 3s fadein 11s forwards;
+    animation: 1s fadein 5.5s forwards;
 }
-
-/*Text*/
-.text{
-    text-align: center;
-    border: 1px solid var(--lightpink);
-    color: var(--purple);
-    text-decoration: none;
-    margin: 10px 0px;
-}
-/*Subject text*/
-.subject > h2{
-    text-align: left;
+/*Form*/
+.academy_form{
+    font-size: 2vw;
 }
