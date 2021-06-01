@@ -62,40 +62,40 @@
     }
 }
 .photo1{
-    animation: 1s fadein 0s forwards;
+    animation: 2s fadein 0s forwards;
 }
 .photo2{
-    animation: 1s fadein 0.5s forwards;
+    animation: 2s fadein 0.5s forwards;
 }
 .photo3{
-    animation: 1s fadein 1s forwards;
+    animation: 2s fadein 1s forwards;
 }
 .photo4{
-    animation: 1s fadein 1.5s forwards;
+    animation: 2s fadein 1.5s forwards;
 }
 .photo5{
-    animation: 1s fadein 2s forwards;
+    animation: 2s fadein 2s forwards;
 }
 .photo6{
-    animation: 1s fadein 2.5s forwards;
+    animation: 2s fadein 2.5s forwards;
 }
 .photo7{
-    animation: 1s fadein 3s forwards;
+    animation: 2s fadein 3s forwards;
 }
 .photo8{
-    animation: 1s fadein 3.5s forwards;
+    animation: 2s fadein 3.5s forwards;
 }
 .photo9{
-    animation: 1s fadein 4s forwards;
+    animation: 2s fadein 4s forwards;
 }
 .photo10{
-    animation: 1s fadein 4.5s forwards;
+    animation: 2s fadein 4.5s forwards;
 }
 .photo11{
-    animation: 1s fadein 5s forwards;
+    animation: 2s fadein 5s forwards;
 }
 .photo12{
-    animation: 1s fadein 5.5s forwards;
+    animation: 2s fadein 5.5s forwards;
 }
 /*Form*/
 .academy_form{
