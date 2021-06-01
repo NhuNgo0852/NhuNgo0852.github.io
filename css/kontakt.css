@@ -17,6 +17,9 @@
     height: 300px;
 }
 /*Contact info*/
+.info_form{
+    margin: 20px;
+}
 #contact_info{
     display: grid;
     grid-template-areas:

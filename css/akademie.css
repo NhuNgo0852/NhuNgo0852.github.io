@@ -73,50 +73,39 @@ h2{
     text-decoration: none;
     margin: 10px 0px;
 }
-/*Subject*/
+/*Courses*/
 .course{
     display: grid;
     grid-template-areas:
-        "nail nail lashes lashes"
-        "area1 . area2 ."
-        "eyebrows eyebrows lips lips"
-        "area3 . area4 ."
-        "waxing waxing . ."
-        "area5 . . .";
-    margin: 40px 100px;
-    padding: 30px;
-    gap: 0px 60px;
+        "nail nail"
+        "eyelash eyelash"
+        "lifting lifting"
+        "permanent permanent"
+        "waxing waxing";
 }
-.area1{
-    grid-area: area1;
+@media screen and (min-width: 550px) {
+    .course{
+        grid-template-areas:
+            "nail nail eyelash eyelash"
+            "lifting lifting permanent permanent"
+            "waxing waxing . .";
+        gap: 0px 40px;
+    }
 }
-#lashes{
-    grid-area: lashes;
+#eyelash{
+    grid-area: eyelash;
 }
-.area2{
-    grid-area: area2;
+#lifting{
+    grid-area: lifting;
 }
-#eyebrows{
-    grid-area: eyebrows;
-}
-.area3{
-    grid-area: area3;
-}
-#lips{
-    grid-area: lips;
-}
-.area4{
-    grid-area: area4;
+#permanent{
+    grid-area: permanent;
 }
 #waxing{
     grid-area: waxing;
 }
-.area5{
-    grid-area: area5;
-}
 /*Subject text*/
 .subject > h2{
-    color: var(--purple);
     text-align: left;
     border-bottom: solid;
 }

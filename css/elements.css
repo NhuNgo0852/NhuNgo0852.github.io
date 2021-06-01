@@ -41,9 +41,6 @@ textarea{
 }
 /*Radio & Checkbox*/
 /*Radio styling*/
-.info_form{
-    margin: 20px;
-}
 /*Hidden the browser's default radio button*/
 .radio_input{
     display: none;
@@ -56,8 +53,8 @@ textarea{
     cursor: pointer;
 }
 .checkmark{
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     border: 2px solid var(--grey);
     border-radius: 50%;
     display: inline-block;
