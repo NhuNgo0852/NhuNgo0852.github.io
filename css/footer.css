@@ -8,37 +8,38 @@
     --green: #5BD963;
 }
 /*footer*/
-.info{
+.ruby_footer{
     background-color: var(--lightpink);
     padding: 50px;
     display: grid;
     grid-template-areas:
-        "time address"
-        "quicklinks newsletter";
-    gap: 0px 5px;
+        "address" 
+        "time"
+        "quicklinks" 
+        "newsletter";
     margin-top: 50px;
     color: black;
-}
-@media screen and (min-width: 550px){
-    .info{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "address time quicklinks newsletter";
-        font-size: 2vw;
-        overflow-wrap: break-word;
-    }
-}
-#time{
-    grid-area: time;
+    font-size: 2vw;
+    justify-content: center;
 }
 #address{
     grid-area: address;
+}
+#time{
+    grid-area: time;
 }
 #quicklinks{
     grid-area: quicklinks;
 }
 #newsletter{
     grid-area: newsletter;
+}
+@media (min-width: 600px) {
+    .ruby_footer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "address time quicklinks newsletter";
+    }
 }
 /*Social link & icon*/
 .social_link{
