@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
-        "logo home cost academy contact"
+        "logo home cost contact gallery"
         "banner_text banner_text banner_text banner_text banner_text"
         "rabatt rabatt rabatt rabatt rabatt";
 }
@@ -25,8 +25,8 @@
 #cost{
     grid-area: cost;
 }
-#acadamy{
-    grid-area: academy;
+#gallery{
+    grid-area:gallery;
 }
 #contact{
     grid-area: contact;

@@ -8,12 +8,12 @@
     --green: #5BD963;
 }
 /*Course*/
-.academy{
+.gallery{
     font-size: 2vw;
     text-align: center;
 }
 /*border*/
-.box_academy{
+.box_gallery{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin: 50px;
@@ -37,9 +37,9 @@
     background-color: var(--darkpink);
     color: white;
 }
-/*Academy*/
+/*Gallery*/
 /*grid image*/
-.img_academy{
+.img_gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
@@ -98,6 +98,6 @@
     animation: 2s fadein 5.5s forwards;
 }
 /*Form*/
-.academy_form{
+.gallery_form{
     font-size: 2vw;
 }

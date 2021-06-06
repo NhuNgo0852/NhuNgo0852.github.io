@@ -11,34 +11,10 @@
 .info{
     background-color: var(--lightpink);
     display: grid;
-    grid-template-areas:
-        "address" 
-        "time"
-        "quicklinks" 
-        "newsletter";
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 50px;
     color: black;
     font-size: 2vw;
-    justify-content: center;
-}
-#address{
-    grid-area: address;
-}
-#time{
-    grid-area: time;
-}
-#quicklinks{
-    grid-area: quicklinks;
-}
-#newsletter{
-    grid-area: newsletter;
-}
-@media (min-width: 600px){
-    .info{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "address time quicklinks newsletter";
-    }
 }
 /*Social link & icon*/
 .social_link{

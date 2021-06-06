@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Akademie </title>
+	<title> Galerie </title>
 	<!-- Meta-->
 	<meta charset="utf-8" name="keywords" content="Nail,Spa,Tatoo,Wimpeln Verlängerung" http-equiv="refresh">
 	<!-- CSS stylesheet-->
-	<link rel="stylesheet" href="css/akademie.css">
+	<link rel="stylesheet" href="css/galerie.css">
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/elements.css">
@@ -25,10 +25,10 @@
 			<a id="home" class="nav_item" href="./index.html" > Home </a>
 			<!-- Kundendienst-->
 			<a id="cost" class="nav_item" href="./preisliste.html"> Preisliste </a>
-			<!-- Akademie -->
-			<a id="academy" class="nav_item" href="./akademie.html"> Akademie </a>
 			<!-- Kontakt -->
 			<a id="contact" class="nav_item" href="./kontakt.html"> Kontakt </a>
+			<!-- Galerie -->
+			<a id="gallery" class="nav_item" href="./galerie.html"> Galerie </a>
 			<!--Image-->
 			<div class="banner_text">
 				<img id="banner" src="img/lash2.webp">
@@ -50,9 +50,9 @@
 	<!--MAIN-->
 	<main>
 		<!--Kurs-->
-		<div class="academy">
+		<div class="gallery">
 			<h2> Unsere Kurse </h3>
-			<div class="box_academy">
+			<div class="box_gallery">
 				<a class="border" href="#nail"> Nägel </a>
 				<a class="border" href="#eyelash"> Wimpernverlängerung </a>
 				<a class="border" href="#lifting"> Augenbrauen- und Wimpernlifting </a>
@@ -61,7 +61,7 @@
 			</div>	
 		</div>
 		<!--Image-->
-		<div class="img_academy">
+		<div class="img_gallery">
 			<div class="photo1 photo">
 				<img class="grid_img" src="img/nail.jpg">
 			</div>
@@ -99,105 +99,6 @@
 				<img class="grid_img" src="img/nail8.jpg">
 			</div>
 		</div>
-		<!--Kurs-->
-		<form>
-			<div class="academy_form">
-				<!--Nagels-Kurs-->
-				<div id="nail">
-					<h2> Nägel </h2>
-					<label for="basic" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="basic" value="course-1">
-						<div class="checkmark"></div>
-						<span> Basic (Kürzen, Feilen, Lackieren) </span>
-					</label>
-					<br>
-					<label for="design" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="design" value="course-1">
-						<div class="checkmark"></div>
-						<span> Design </span>
-					</label>
-					<br>
-					<label for="massage" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="massage" value="course-1">
-						<div class="checkmark"></div>
-						<span> Maniküre & Pediküre </span>
-					</label>
-				</div>
-				<!--Wimpernbehandlung-->
-				<div id="eyelash">
-					<h2> Wimpernverlängerung </h2>
-					<label for="classic" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="classic" value="course-2">
-						<div class="checkmark"></div>
-						<span> Classic 1:1 </span>
-					</label>
-					<br>
-					<label for="volumentechnik" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="volumentechnik" value="course-2">
-						<div class="checkmark"></div>
-						<span> Volumentechnik (2D-3D, 4D-6D) </span>
-					</label>
-					<br>
-					<label for="megavolume" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="megavolume" value="course-2">
-						<div class="checkmark"></div>
-						<span> Megavolume </span>
-					</label>		
-				</div>
-				<!--Permanent Make up-->
-				<div id="permanent">
-					<h2> Permanent Make up </h2>
-					<label for="eyebrows" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="eyebrows" value="course-3">
-						<div class="checkmark"></div>
-						<span> Augenbrauen (Microblading, Powder Shading, Hairstroke) </span>
-					</label>
-					<br>
-					<label for="lips" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="lips" value="course-3">
-						<div class="checkmark"></div>
-						<span> Lippen (Konturen, 3D Shading, Full lips) </span>
-					</label>
-					<br>
-					<label for="eyes" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="eyes" value="course-3">
-						<div class="checkmark"></div>
-						<span> Augen (Wimpernkranzverdichtung, Dekorativer Eyeliner) </span>
-					</label>
-				</div>
-				<!--Augen- & Wimpernlifting-->
-				<div id="lifting">
-					<h2> Augen- & Wimpernlifting </h2>
-					<label for="lash" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="lash" value="course-4">
-						<div class="checkmark"></div>
-						<span> Wimpernlifting mit Keratin & Wimpern färben </span>
-					</label>
-					<br>
-					<label for="eye" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="eye" value="course-4">
-						<div class="checkmark"></div>
-						<span> Augenbrauen färben & Augenbrauenlifting </span>
-					</label>
-				</div>
-				<!--Waxing-->
-				<div id="waxing">
-					<h2> Waxing </h2>
-					<label for="face" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="face" value="course-5">
-						<div class="checkmark"></div>
-						<span> Augenbrauen, Gesicht, Oberlippe/ Kinn </span>
-					</label>
-					<br>
-					<label for="body" class="radio_group">
-						<input class="radio_input" type="radio" name="course-choice" id="body" value="course-5">
-						<div class="checkmark"></div>
-						<span> Arme & Beine (Waden) </span>
-					</label>
-				</div>
-			</div>
-			<button type="submit" class="button"> Absenden </button>
-		</form>
 	</main>
 	<!--FOOTER-->
 	<footer>
@@ -216,7 +117,7 @@
 				<!--Social links-->	
 				<p> Follow us: </p>
 				<!--Facebook-->
-				<a class="social_link">
+				<a class="social_link" href="https://www.facebook.com/profile.php?id=100063787341246">
 					<span class="iconify" data-icon="entypo-social:facebook" data-inline="false" data-width="30px" data-height="30px"></span>
 				<!--Instagram-->
 				<a class="social_link" href="http://www.instagram.com/_nessie174_/" target="_blank" rel="noopener">
@@ -242,10 +143,10 @@
 					<a class="q_link" href="./preisliste.html"> Preisliste </a>
 				</li>
 				<li>
-					<a class="q_link" href="./akademie.html"> Akademie </a>
+					<a class="q_link" href="./kontakt.html"> Kontakt </a>
 				</li>
 				<li>
-					<a class="q_link" href="./kontakt.html"> Kontakt </a>
+					<a class="q_link" href="./galerie.html"> Galerie </a>
 				</li>
 				<li>
 					<a class="q_link" href="./Datenschutz.html"> Datenschutz </a>
