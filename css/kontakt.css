@@ -11,6 +11,7 @@
 /*gg-map*/
 #gg_map{
     text-align: center;
+    font-size: 2vw;
 }
 #gg_map > iframe{
     width: 450px;
@@ -18,20 +19,12 @@
 }
 /*Contact info*/
 #contact_info{
-    display: grid;
-    grid-template-areas:
-        "gg_map"
-        "social";
-    background-color: var(--grey);
-    font-size: 2vw;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
 }
-@media screen and (min-width: 550px) {
-    #contact_info{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "gg_map social";
-        padding: 10px 0px;
-    }
+@media screen and (min-width: 600px) {
     #gg_map > iframe{
         width: 600px;
         height: 400px;
@@ -49,11 +42,18 @@
 #social{
     align-self: center;
     justify-self: center;
+    padding: 30px 50px;
+    font-size: 1.5vw;
+    text-align: center;
 }
 /*Text*/
 .social_text{
+    text-decoration: none;
     list-style-type: none;
-    text-align: center;
+    color: black;
+}
+.social_web:hover, .social_web:active{
+    color: var(--lightpink);
 }
 .icon_inline{
     display: inline-block;

@@ -10,11 +10,17 @@
 /*footer*/
 .info{
     background-color: var(--lightpink);
+    padding: 0px 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 50px;
     color: black;
     font-size: 2vw;
+}
+@media screen and (max-width: 600px) {
+    .info{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 /*Social link & icon*/
 .social_link{

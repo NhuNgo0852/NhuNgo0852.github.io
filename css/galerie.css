@@ -88,16 +88,15 @@
 .photo9{
     animation: 2s fadein 4s forwards;
 }
-.photo10{
-    animation: 2s fadein 4.5s forwards;
-}
-.photo11{
-    animation: 2s fadein 5s forwards;
-}
-.photo12{
-    animation: 2s fadein 5.5s forwards;
-}
 /*Form*/
 .gallery_form{
     font-size: 2vw;
+}
+/*Social button*/
+.button_gallery{
+    text-align: center;
+}
+.button_social:link, .button_social:visited{
+    text-decoration: none;
+    color: black;
 }

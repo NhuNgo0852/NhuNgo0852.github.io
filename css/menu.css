@@ -15,9 +15,28 @@
         "logo home cost contact gallery"
         "banner_text banner_text banner_text banner_text banner_text"
         "rabatt rabatt rabatt rabatt rabatt";
+    align-self: center;
+    justify-self: center;
+}
+@media screen and (max-width: 600px){
+    #logo{
+        width: 50%;
+        height: auto;
+    }
+    .item_group{
+        grid-template-areas:
+            ". . logo . ."
+            ". . home . ."
+            ". . cost . ."
+            ". . contact. ."
+            ". . gallery . ."
+            "banner_text banner_text banner_text banner_text banner_text"
+            "rabatt rabatt rabatt rabatt rabatt";
+    }
 }
 #logo{
     grid-area: logo;
+    text-align: center;
 }
 #home{
     grid-area: home;
@@ -30,6 +49,20 @@
 }
 #contact{
     grid-area: contact;
+}
+/*nav-item*/
+.nav_item{
+    align-self: center;
+    text-align: center;
+    font-size: 2.5vw;
+    padding: 50px 30px;
+}
+.nav_item:link, .nav_item:visited{
+    text-decoration: none;
+    color: black;
+}
+.nav_item:hover, .nav_item:active{
+    color: var(--lightpink);
 }
 /*Banner*/
 #banner{
@@ -129,18 +162,4 @@
         opacity: 0;
         bottom: -20px;
     }
-}
-/*nav-item*/
-.nav_item{
-    align-self: center;
-    text-align: center;
-    font-size: 2.5vw;
-    overflow-wrap: break-word;
-}
-.nav_item:link, .nav_item:visited{
-    text-decoration: none;
-    color: black;
-}
-.nav_item:hover, .nav_item:active{
-    color: var(--lightpink);
 }
