@@ -103,21 +103,23 @@
 /*Membership*/
 .membership{
     display: inline-flex;
-    flex-flow: row;
+    flex-flow: row wrap;
+    justify-content: center;
     background-color: #BF7069;
-    margin-top: 100px;
-    padding: 20px;
-}
-.bonus_card{
-    flex: 50%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2vw;
 }
 .text_left{
-    flex: 50%;
-    font-size: 2.5vw;
+    flex: 1 50%;
     color: white;
-    margin-right: 10px;
+    padding: 20px;
 }
-.icon_quote{
-    width: 3vw;
-    height: 3vw;
+@media screen and (max-width: 1100px){
+    .bonus_card{
+        margin: 30px;
+        width: 70%;
+        height: auto;
+    }
 }
