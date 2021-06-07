@@ -51,14 +51,14 @@ textarea{
 /*Creat a custom radio button*/
 .radio_group{
     position: relative;
-    padding-left: 30px;
+    padding-left: 25px;
     padding-right : 20px;
     cursor: pointer;
 }
 .checkmark{
-    height: 1.5vw;
-    width: 1.5vw;
-    border: 2px solid var(--grey);
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--grey);
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -73,15 +73,15 @@ textarea{
 /*Styling radio button when checked*/
 .checkmark::after{
     content: "";
-    height: calc(100% - 0.3vw);
-    width: calc(100% - 0.3vw);
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
     background: var(--lightpink);
     position: absolute;
     top: 0;
     left: 0;
     border-radius: 50%;
-    margin-top: 0.15vw;
-    margin-left: 0.15vw;
+    margin-top: 3px;
+    margin-left: 3px;
     transition: transform .5s ease;
     transform: scale(0);
 }
@@ -103,9 +103,9 @@ textarea{
 }
 .checkbox_mark{
     position: absolute;
-    height: 1.65vw;
-    width: 1.65vw;
-    border: 2px solid var(--grey);
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--grey);
     border-radius: 50%;
     display: inline-block;
 }
@@ -115,15 +115,37 @@ textarea{
 }
 /*Styling checkbox when checked*/
 .checkbox_mark::after{
-    content: url('https://api.iconify.design/mdi:checkbox-marked-circle.svg?color=%23F2BFB3&height=24');
+    content: url('https://api.iconify.design/mdi:checkbox-marked-circle.svg?color=%23F2BFB3&height=20');
     display: none;
 }
 .checkbox_input:checked + .checkbox_mark::after{
     display: inline-block;
-    transform: translate(-0.1vw, -0.1vw);
+    transform: translate(-2%, -2%);
 }
 /*Icon social*/
 .icon_social{
     width: 4vw;
     height: 4vw;
+}
+@media screen and (max-width: 600px){
+    .checkmark::after{        
+        height: calc(100% - 2px);
+        width: calc(100% - 2px);
+        margin-top: 1px;
+        margin-left: 1px;
+    }
+    .checkmark{
+        height: 9px;
+        width: 9px;
+    }
+    .checkbox_mark{    
+        height: 9px;
+        width: 9px;
+    }
+    .checkbox_mark::after{
+        content: url('https://api.iconify.design/mdi:checkbox-marked-circle.svg?color=%23F2BFB3&height=9');
+    }
+    .checkbox_input:checked + .checkbox_mark::after{
+        transform: translate(-1%, -1%);
+    }
 }

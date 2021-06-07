@@ -14,8 +14,8 @@
     font-size: 2vw;
 }
 #gg_map > iframe{
-    width: 450px;
-    height: 300px;
+    width: 200px;
+    height: auto;
 }
 /*Contact info*/
 #contact_info{

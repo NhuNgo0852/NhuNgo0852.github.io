@@ -102,9 +102,8 @@
 }
 /*Membership*/
 .membership{
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: #BF7069;
     align-items: center;
     width: 100%;
@@ -112,11 +111,10 @@
     font-size: 2vw;
 }
 .text_left{
-    flex: 1 50%;
     color: white;
     padding: 20px;
 }
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 700px){
     .bonus_card{
         margin: 30px;
         width: 70%;
