@@ -19,10 +19,6 @@
     justify-self: center;
 }
 @media screen and (max-width: 600px){
-    #logo{
-        width: 50%;
-        height: auto;
-    }
     .item_group{
         grid-template-areas:
             ". . logo . ."
@@ -55,7 +51,6 @@
     align-self: center;
     text-align: center;
     font-size: 2.5vw;
-    padding: 50px 30px;
 }
 .nav_item:link, .nav_item:visited{
     text-decoration: none;
@@ -70,6 +65,7 @@
     height: auto;
 }
 .banner_text{
+    margin-top: 20px;
     grid-area: banner_text;
     position: relative;
 }
@@ -78,7 +74,6 @@
     position: absolute;
     top: 70%;
     left: 75%;
-    margin: 20px;
 }
 #termin:link, #termin:visited{
     text-decoration: none;
@@ -86,7 +81,7 @@
     border: 1px solid var(--purple);
     background-color: var(--purple);
     border-radius: 5px;
-    padding: 10px;
+    padding: 4px;
     font-size: 2vw;
 }
 #termin:hover, #termin:active{
@@ -104,12 +99,12 @@
     color: var(--darkpink);
     font-size: 3.5vw ;
     background: rgba(255, 255, 255, 0.05);
-    padding: 40px;
+    padding: 20px;
     border-radius: 50%;
 }
 @media screen and (max-width: 900px){
     #welcome{
-        top: 40%;
+        top: 50%;
         left: 60%;
     }
 }
@@ -118,10 +113,10 @@
 #rabatt{
     position: relative;
     grid-area: rabatt;
-    margin-bottom: 150px;
     display: flex;
+    height: 100%;
     background-color: black;
-    padding: 50px;
+    padding: 15px;
     font-size: 3vw;
 }
 .text1, .text2, .text3{
@@ -129,8 +124,9 @@
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 0px;
+    bottom: 0;
     opacity: 0;
+    align-items: center;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);

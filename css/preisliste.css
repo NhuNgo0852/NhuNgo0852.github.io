@@ -22,6 +22,7 @@
 }
 /*Box list*/
 .box_list{
+    margin-top: 50px;
     text-align: center;
     font-size: 2vw;
 }

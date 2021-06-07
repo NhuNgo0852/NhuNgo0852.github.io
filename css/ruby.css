@@ -52,7 +52,7 @@
 #eyebrows{
     grid-area: text5;
 }
-/*text*/
+/*text in main*/
 .text_group{
     position: relative;
     padding: 50px;
@@ -102,14 +102,22 @@
 }
 /*Membership*/
 .membership{
-    display: flex;
+    display: inline-flex;
+    flex-flow: row;
     background-color: #BF7069;
     margin-top: 100px;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 40px;
+    padding: 20px;
 }
-.text_right{
+.bonus_card{
+    flex: 50%;
+}
+.text_left{
+    flex: 50%;
     font-size: 2.5vw;
     color: white;
+    margin-right: 10px;
+}
+.icon_quote{
+    width: 3vw;
+    height: 3vw;
 }

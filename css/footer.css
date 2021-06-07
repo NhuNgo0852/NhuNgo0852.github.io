@@ -13,13 +13,15 @@
     padding: 20px 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
     margin-top: 50px;
     color: black;
     font-size: 2vw;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
     .info{
         grid-template-columns: repeat(2, 1fr);
+        justify-items: left;
     }
 }
 /*Social link & icon*/
