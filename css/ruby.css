@@ -33,7 +33,7 @@
             "text3 img3"
             "img4 text4"
             "text5 img5";
-        gap: 30px;
+        gap: 50px;
     }
 }
 /*Text group*/
@@ -83,7 +83,7 @@
     border: 1px solid var(--darkpink);
     align-self: center;
     justify-self: center;
-    margin: 20px;
+    margin: 40px;
 }
 #img1{
     grid-area: img1;
