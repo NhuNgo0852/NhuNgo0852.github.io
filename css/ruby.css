@@ -55,14 +55,14 @@
 /*text in main*/
 .text_group{
     position: relative;
-    padding: 50px;
+    align-self: center;
     font-size: 2vw;
     display: inline-flex;
 }
 /*Button*/
 .button_index{
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 10%;
 }
 /*Price button*/
