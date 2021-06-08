@@ -103,8 +103,8 @@ textarea{
 }
 .checkbox_mark{
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     border: 1px solid var(--grey);
     border-radius: 50%;
     display: inline-block;
@@ -115,18 +115,22 @@ textarea{
 }
 /*Styling checkbox when checked*/
 .checkbox_mark::after{
-    content: url('https://api.iconify.design/mdi:checkbox-marked-circle.svg?color=%23F2BFB3&height=20');
+    content: url('https://api.iconify.design/mdi:checkbox-marked-circle.svg?color=%23F2BFB3&height=22');
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-4%, -4%);
 }
 .checkbox_input:checked + .checkbox_mark::after{
     display: inline-block;
-    transform: translate(-2%, -2%);
 }
 /*Icon social*/
 .icon_social{
     width: 4vw;
     height: 4vw;
 }
+/*checkmark & checkbox_mark for Mobile*/
 @media screen and (max-width: 600px){
     .checkmark::after{        
         height: calc(100% - 2px);

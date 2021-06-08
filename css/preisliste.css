@@ -9,7 +9,7 @@
     --green: #5BD963;
 }
 /*Price list*/
-.price_list{
+.price_list > h2{
     margin-top: 70px;
     text-align: center;
 }
@@ -22,7 +22,7 @@
 }
 /*Box list*/
 .box_list{
-    margin-top: 50px;
+    margin-top: 70px;
     text-align: center;
     font-size: 2vw;
 }
@@ -41,23 +41,21 @@
     background-color: var(--darkpink);
     color: white;
 }
-/*Title*/
-.title{
-    border: 1px solid var(--lightpink);
-    background-color: var(--darkpink);
-    color: var(--purple);
-}
-.t_padding{
-    padding: 0px 40px;
-}
+/*Price list table*/
 .grid_price{
     display: flex;
     justify-content: center;
     font-size: 2vw;
 }  
+/*Title*/
+.title{
+    background-color: var(--darkpink);
+    color: var(--purple);
+    text-align: center;
+    padding: 1px 0px;
+}
 /*Nail studio*/
 #nail_studio{
-    position: initial;
     display: grid;
     grid-template-areas: 
         "new acryl gel"
@@ -66,16 +64,30 @@
         "name2 euro2 ."
         "care care care"
         "name3 euro3 .";
-    align-self: center;
-    justify-self: center;
     border: 2px dotted var(--purple);
     background-color: var(--lightpink);
     border-radius: 10px;
-    padding: 30px 50px;
+    padding: 0px 40px 30px 40px;
+    gap: 1px; 
 }
 /*Grid area*/
+#new{
+    grid-area: new;
+}
+#acryl{
+    grid-area: acryl;
+}
+#gel{
+    grid-area: gel;
+}
 #art{
     grid-area: art;
+}
+.name1{
+    grid-area: name1;
+}
+.euro1{
+    grid-area: euro1;
 }
 .name2{
     grid-area: name2;
@@ -94,14 +106,13 @@
 }
 /*List*/
 .list{
-    list-style-type: none;
     text-align: right;
-    margin-right: 40px;
+    list-style-type: none;
 }
 .list_name{
     text-align: left;
     list-style-type: none;
-    margin-left: 40px;
+    padding-left: 20px;
 }
 /*schönheit*/
 #others{
@@ -119,7 +130,8 @@
     border: 2px dotted var(--purple);
     background-color: var(--lightpink);
     border-radius: 10px;
-    padding: 30px 50px;
+    padding: 0px 40px 30px 40px;
+    gap: 1px;
 }
 @media screen and (max-width: 650px) {
     #others{
@@ -211,4 +223,9 @@
 }
 .euro10{
     grid-area: euro10;
+}
+.t_padding{
+    justify-self: center;
+    padding-right: 20px;
+    padding-left: 20px;
 }
