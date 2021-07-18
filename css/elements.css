@@ -153,3 +153,15 @@ textarea{
         transform: translate(-1%, -1%);
     }
 }
+/*Social button*/
+.button_gallery{
+    text-align: center;
+}
+.button_social:link, .button_social:visited{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+}
+.button_social:hover, .button_social:active{
+    color: white;
+}

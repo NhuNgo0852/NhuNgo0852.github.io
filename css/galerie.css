@@ -58,15 +58,3 @@
 .photo9{
     animation: 2s fadein 4s forwards;
 }
-/*Social button*/
-.button_gallery{
-    text-align: center;
-}
-.button_social:link, .button_social:visited{
-    text-decoration: none;
-    color: black;
-    font-size: 3vw;
-}
-.button_social:hover, .button_social:active{
-    color: white;
-}
