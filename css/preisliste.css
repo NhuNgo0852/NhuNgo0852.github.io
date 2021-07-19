@@ -24,7 +24,7 @@
 .box_list{
     margin-top: 70px;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 /*Box*/
 .box:link, .box:visited{
@@ -45,7 +45,7 @@
 .grid_price{
     display: flex;
     justify-content: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }  
 /*Title*/
 .title{

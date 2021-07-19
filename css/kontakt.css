@@ -31,14 +31,6 @@
         height: 400px;
     }
 }
-/*Contact form*/
-.contact_form{
-    text-align: center;
-    font-size: 2vw;
-}
-.info_form{
-    margin: 20px;
-}
 /*Social and Icon Whatsapp & Instagram*/
 #social{
     align-self: center;

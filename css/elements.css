@@ -14,7 +14,7 @@
     padding: 5px 15px;
     border: 1px solid var(--grey);
     border-radius: 20px;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 .button:hover{
     background-color: var(--darkpink);
@@ -23,135 +23,16 @@
     color: white;
 }
 /*Input*/
-.contact_input{
-    border-color: black;
-    width: 50%;
-    border-radius: 3px;
-    padding: 10px;
-    font-size: 2vw;
-}
 .footer_input{
     padding: 5px;
     border: 1px solid var(--lightpink);
     display: inline-block;
-    font-size: 2vw;
-}
-textarea{
-    width: 50%;
-    border: 2px solid var(--grey);
-    border-radius: 3px;
-    padding: 10px;
-}
-/*Radio & Checkbox*/
-/*Radio styling*/
-/*Hidden the browser's default radio button*/
-.radio_input{
-    display: none;
-}
-/*Creat a custom radio button*/
-.radio_group{
-    position: relative;
-    padding-left: 25px;
-    padding-right : 20px;
-    cursor: pointer;
-}
-.checkmark{
-    height: 20px;
-    width: 20px;
-    border: 1px solid var(--grey);
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: color .5s ease;
-}
-/*Creat a circle, hidden when not checked*/
-.radio_input:checked + .checkmark{
-    border-color: var(--lightpink);
-}
-/*Styling radio button when checked*/
-.checkmark::after{
-    content: "";
-    height: calc(100% - 6px);
-    width: calc(100% - 6px);
-    background: var(--lightpink);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    margin-top: 3px;
-    margin-left: 3px;
-    transition: transform .5s ease;
-    transform: scale(0);
-}
-.radio_input:checked + .checkmark::after{
-    transform: scale(1);
-}
-/*Checkbox styling*/
-/*Hidden browser's checkbox default*/
-.checkbox_input{
-    display: none;
-}
-.checkbox_custom >span{
-    margin-left: 30px;
-}
-/*Creat custom checkbox*/
-.checkbox_custom{
-    position: relative;
-    cursor: pointer;
-}
-.checkbox_mark{
-    position: absolute;
-    height: 22px;
-    width: 22px;
-    border: 1px solid var(--grey);
-    border-radius: 50%;
-    display: inline-block;
-}
-/*Creat a circle, hidden when not checked*/
-.checkbox_input:checked + .checkbox_mark{
-    border-color: var(--lightpink);
-}
-/*Styling checkbox when checked*/
-.checkbox_mark::after{
-    content: url('https://api.iconify.design/mdi:checkbox-marked-circle.svg?color=%23F2BFB3&height=22');
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-4%, -4%);
-}
-.checkbox_input:checked + .checkbox_mark::after{
-    display: inline-block;
+    font-size: 1.5vw;
 }
 /*Icon social*/
 .icon_social{
-    width: 4vw;
-    height: 4vw;
-}
-/*checkmark & checkbox_mark for Mobile*/
-@media screen and (max-width: 600px){
-    .checkmark::after{        
-        height: calc(100% - 2px);
-        width: calc(100% - 2px);
-        margin-top: 1px;
-        margin-left: 1px;
-    }
-    .checkmark{
-        height: 9px;
-        width: 9px;
-    }
-    .checkbox_mark{    
-        height: 9px;
-        width: 9px;
-    }
-    .checkbox_mark::after{
-        content: url('https://api.iconify.design/mdi:checkbox-marked-circle.svg?color=%23F2BFB3&height=9');
-    }
-    .checkbox_input:checked + .checkbox_mark::after{
-        transform: translate(-1%, -1%);
-    }
+    width: 2vw;
+    height: 2vw;
 }
 /*Social button*/
 .button_gallery{
