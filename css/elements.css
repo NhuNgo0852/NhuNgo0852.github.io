@@ -27,11 +27,6 @@
     border: 1px solid var(--lightpink);
     display: inline-block;
 }
-/*Icon social*/
-.icon_social{
-    width: 2vw;
-    height: 2vw;
-}
 /*Social button*/
 .button_gallery{
     text-align: center;
