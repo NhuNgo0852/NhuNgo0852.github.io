@@ -10,7 +10,7 @@
 /*Button*/
 /*Button styling*/
 .button{
-    margin: 20px 0px;
+    margin: 10px 0px;
     padding: 5px 15px;
     border: 1px solid var(--grey);
     border-radius: 20px;
