@@ -11,7 +11,7 @@
 /*gg-map*/
 #gg_map{
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 #gg_map > iframe{
     width: 200px;

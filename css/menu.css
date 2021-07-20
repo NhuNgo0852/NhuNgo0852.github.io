@@ -32,7 +32,8 @@
 }
 #logo{
     grid-area: logo;
-    text-align: center;
+    background:url("/img/logo.png");
+    display: block;
 }
 #home{
     grid-area: home;
