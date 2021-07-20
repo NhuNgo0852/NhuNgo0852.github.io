@@ -32,7 +32,6 @@
 }
 #logo{
     grid-area: logo;
-    background:url("/img/logo1.png");
     display: block;
 }
 #home{
