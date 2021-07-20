@@ -14,7 +14,6 @@
     padding: 5px 15px;
     border: 1px solid var(--grey);
     border-radius: 20px;
-    font-size: 1.5em;
 }
 .button:hover{
     background-color: var(--darkpink);
@@ -27,12 +26,11 @@
     padding: 5px;
     border: 1px solid var(--lightpink);
     display: inline-block;
-    font-size: 1.5em;
 }
 /*Icon social*/
 .icon_social{
-    width: 2em;
-    height: 2em;
+    width: 2vw;
+    height: 2vw;
 }
 /*Social button*/
 .button_gallery{
@@ -41,7 +39,6 @@
 .button_social:link, .button_social:visited{
     text-decoration: none;
     color: black;
-    font-size: 1.5em;
 }
 .button_social:hover, .button_social:active{
     color: white;

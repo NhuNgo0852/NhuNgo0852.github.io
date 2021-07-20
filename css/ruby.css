@@ -56,7 +56,6 @@
 .text_group{
     position: relative;
     align-self: center;
-    font-size: 1.5vw;
     display: inline-flex;
 }
 /*Button*/
@@ -69,7 +68,6 @@
 .price:link, .price:visited{
     text-decoration: none;
     color: black;
-    font-size: 1.5vw;
 }
 .price:hover, .price:active{
     color: white;
@@ -108,7 +106,6 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: 1.5em;
 }
 .text_left{
     color: white;

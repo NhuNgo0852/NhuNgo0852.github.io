@@ -82,7 +82,7 @@
     background-color: var(--purple);
     border-radius: 5px;
     padding: 4px;
-    font-size: 2em;
+    font-size: 0.5em;
 }
 #termin:hover, #termin:active{
     color: var(--purple);
@@ -97,7 +97,7 @@
     top: 55%;
     left: 65%;
     color: var(--darkpink);
-    font-size: 3.5em ;
+    font-size: 3em ;
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 50%;
@@ -117,7 +117,7 @@
     height: 100%;
     background-color: black;
     padding: 15px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .text1, .text2, .text3{
     color: white;
