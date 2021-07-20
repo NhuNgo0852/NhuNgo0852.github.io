@@ -27,6 +27,11 @@
     border: 1px solid var(--lightpink);
     display: inline-block;
 }
+/*Icon social*/
+.icon_social{
+    width: 3vw;
+    height: 3vw;
+}
 /*Social button*/
 .button_gallery{
     text-align: center;
