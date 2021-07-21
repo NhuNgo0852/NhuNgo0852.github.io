@@ -65,7 +65,7 @@
     border: 2px dotted var(--purple);
     background-color: var(--lightpink);
     border-radius: 10px;
-    padding: 10px 40px 30px 40px;
+    padding: 10px 30px 30px 30px;
     gap: 1px; 
 }
 /*Grid area*/
@@ -103,6 +103,12 @@
     grid-area: euro3;
 }
 /*List*/
+.name1, .euro1 > li{
+    white-space: nowrap;
+}
+#gel > h3{
+    white-space: nowrap;
+}
 .list{
     text-align: right;
     list-style-type: none;
@@ -128,7 +134,7 @@
     border: 2px dotted var(--purple);
     background-color: var(--lightpink);
     border-radius: 10px;
-    padding: 10px 40px 30px 40px;
+    padding: 10px 30px 30px 30px;
     gap: 1px;
 }
 @media screen and (max-width: 650px) {

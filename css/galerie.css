@@ -33,28 +33,64 @@
 }
 .photo1{
     animation: 2s fadein 0s forwards;
+    background-image: url("img/nagel.jpg");
 }
 .photo2{
     animation: 2s fadein 0.5s forwards;
+    background-image: url("img/augenbrauen.jpg");
 }
 .photo3{
     animation: 2s fadein 1s forwards;
+    background-image: url("img/wimpern1.jpg");
 }
 .photo4{
     animation: 2s fadein 1.5s forwards;
+    background-image: url("img/Wimpern4.jpg");
 }
 .photo5{
     animation: 2s fadein 2s forwards;
+    background-image: url("img/nail5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .photo6{
     animation: 2s fadein 2.5s forwards;
+    background-image: url("img/lips3.jpg");
 }
 .photo7{
     animation: 2s fadein 3s forwards;
+    background-image: url("img/nail7.jpg");
 }
 .photo8{
     animation: 2s fadein 3.5s forwards;
+    background-image: url("img/augenbrauen1.jpg");
 }
 .photo9{
     animation: 2s fadein 4s forwards;
+    background-image: url("img/wimpern5.jpg");
+}
+.photo10{
+    animation: 2s fadein 4.5s forwards;
+    background-image: url("img/lips1.jpg");
+}
+.photo11{
+    animation: 2s fadein 5s forwards;
+    background-image: url("img/wimpern6.jpg");
+}
+.photo12{
+    animation: 2s fadein 5.5s forwards;
+    background-image: url("img/nail8.jpg");
+}
+.photo13{
+    animation: 2s fadein 6s forwards;
+    background-image: url("augenbrauen4.jpg");
+}
+.photo14{
+    animation: 2s fadein 6.5s forwards;
+    background-image: url("nail2.jpg");
+}
+.photo15{
+    animation: 2s fadein 7s forwards;
+    background-image: url("wimpern7.jpg");
 }

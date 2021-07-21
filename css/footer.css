@@ -119,3 +119,8 @@
 #map:hover, #map:active{
     color: white;
 }
+/*copyright*/
+.copyright{
+    text-align: center;
+    padding: 5px 0px;
+}
