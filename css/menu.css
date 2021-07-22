@@ -10,11 +10,11 @@
 /*Bar*/
 .item_group{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-        "logo home cost contact gallery"
-        "banner_text banner_text banner_text banner_text banner_text"
-        "rabatt rabatt rabatt rabatt rabatt";
+        "logo home cost contact gallery gift"
+        "banner_text banner_text banner_text banner_text banner_text banner_text"
+        "rabatt rabatt rabatt rabatt rabatt rabatt";
     align-self: center;
     justify-self: center;
 }
@@ -26,6 +26,7 @@
             ". . cost . ."
             ". . contact. ."
             ". . gallery . ."
+            ". . gift . ."
             "banner_text banner_text banner_text banner_text banner_text"
             "rabatt rabatt rabatt rabatt rabatt";
     }
@@ -45,6 +46,9 @@
 }
 #contact{
     grid-area: contact;
+}
+#gift{
+    grid-area: gift;
 }
 /*nav-item*/
 .nav_item{
@@ -96,7 +100,7 @@
     text-align: center;
     top: 55%;
     left: 65%;
-    color: var(--darkpink);
+    color: var(--darkbrown);
     font-size: 3vw ;
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
