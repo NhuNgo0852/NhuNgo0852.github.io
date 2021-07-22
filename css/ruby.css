@@ -32,7 +32,8 @@
             "img2 text2"
             "text3 img3"
             "img4 text4"
-            "text5 img5";
+            "text5 img5"
+            "img6 text6";
         gap: 50px;
     }
 }
@@ -46,11 +47,14 @@
 #makeup{
     grid-area: text3;
 }
-#waxing{
+#foot_care{
     grid-area: text4;
 }
-#eyebrows{
+#waxing{
     grid-area: text5;
+}
+#eyebrows{
+    grid-area: text6;
 }
 /*text in main*/
 .text_group{
@@ -97,6 +101,9 @@
 }
 #img5{
     grid-area: img5;
+}
+#img6{
+    grid-area: img6;
 }
 /*Membership*/
 .membership{

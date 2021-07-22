@@ -10,29 +10,30 @@
 /*Bar*/
 .item_group{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-        "logo home cost contact gallery"
-        "banner_text banner_text banner_text banner_text banner_text"
-        "rabatt rabatt rabatt rabatt rabatt";
+        "logo home cost contact gallery gift ."
+        "banner_text banner_text banner_text banner_text banner_text banner_text banner_text"
+        "rabatt rabatt rabatt rabatt rabatt rabatt rabatt";
     align-self: center;
     justify-self: center;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 850px){
     .item_group{
         grid-template-areas:
-            ". . logo . ."
-            ". . home . ."
-            ". . cost . ."
-            ". . contact. ."
-            ". . gallery . ."
-            "banner_text banner_text banner_text banner_text banner_text"
-            "rabatt rabatt rabatt rabatt rabatt";
+            ". . . logo . . ."
+            ". . . home . . ."
+            ". . . cost . . ."
+            ". . . contact. . ."
+            ". . . gallery . . ."
+            ". . . gift . . ."
+            "banner_text banner_text banner_text banner_text banner_text banner_text banner_text"
+            "rabatt rabatt rabatt rabatt rabatt rabatt rabatt";
     }
 }
 #logo{
+    align-items: center;
     grid-area: logo;
-    display: block;
 }
 #home{
     grid-area: home;
@@ -46,11 +47,14 @@
 #contact{
     grid-area: contact;
 }
+#gift{
+    grid-area: gift;
+}
 /*nav-item*/
 .nav_item{
     align-self: center;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .nav_item:link, .nav_item:visited{
     text-decoration: none;
