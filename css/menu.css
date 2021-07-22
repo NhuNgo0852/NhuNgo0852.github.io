@@ -12,9 +12,9 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
-        "logo home cost contact gallery gift"
-        "banner_text banner_text banner_text banner_text banner_text banner_text"
-        "rabatt rabatt rabatt rabatt rabatt rabatt";
+        "logo home cost contact gallery"
+        "banner_text banner_text banner_text banner_text banner_text"
+        "rabatt rabatt rabatt rabatt rabatt";
     align-self: center;
     justify-self: center;
 }
@@ -26,9 +26,8 @@
             ". . cost . ."
             ". . contact. ."
             ". . gallery . ."
-            ". . gift . ."
-            "banner_text banner_text banner_text banner_text banner_text banner_text"
-            "rabatt rabatt rabatt rabatt rabatt rabatt";
+            "banner_text banner_text banner_text banner_text banner_text"
+            "rabatt rabatt rabatt rabatt rabatt";
     }
 }
 #logo{
@@ -46,9 +45,6 @@
 }
 #contact{
     grid-area: contact;
-}
-#gift{
-    grid-area: gift;
 }
 /*nav-item*/
 .nav_item{
