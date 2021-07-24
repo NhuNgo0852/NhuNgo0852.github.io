@@ -19,10 +19,15 @@
     border: 1px solid var(--darkbrown);
     background-color: var(--yellow);
     text-align: left;
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 800px;
 }
-.coupon1{
-    margin-left: 50px;
+.coupon1, .coupon2{
+    margin: 50px;
 }
 .coupon3{
     width: 600px;
@@ -40,7 +45,7 @@
             "coupon3";
     }
     .coupon_gift > img{
-        width: 200px;
+        width: 300px;
         height: auto;
     }
     .coupon1, .coupon2{

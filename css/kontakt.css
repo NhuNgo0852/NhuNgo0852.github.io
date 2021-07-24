@@ -14,8 +14,8 @@
     text-align: center;
 }
 #gg_map > iframe{
-    width: 200px;
-    height: auto;
+    width: 400px;
+    height: 300px;
 }
 /*Contact info*/
 #contact_info{

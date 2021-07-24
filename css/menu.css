@@ -8,6 +8,10 @@
     --yellow: #F2E0C9;
     --green: #5BD963;
 }
+/*nav icon*/
+.icon{
+    display: none;
+}
 /*Bar*/
 .item_group{
     display: grid;
@@ -21,6 +25,7 @@
 }
 @media screen and (max-width: 850px){
     .item_group{
+        position: relative;
         grid-template-areas:
             ". . . logo . . ."
             ". . . home . . ."
@@ -30,6 +35,13 @@
             ". . . gift . . ."
             "banner_text banner_text banner_text banner_text banner_text banner_text banner_text"
             "rabatt rabatt rabatt rabatt rabatt rabatt rabatt";
+    }
+    .icon{
+        position: absolute;
+        float: right;
+        top: 25%;
+        left: 90%;
+        display: block;
     }
 }
 #logo{
@@ -103,7 +115,7 @@
     left: 65%;
     color: var(--darkbrown);
     font-size: 4vw ;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.3);
     padding: 20px;
     border-radius: 50%;
 }
