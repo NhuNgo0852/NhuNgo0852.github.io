@@ -86,7 +86,7 @@
     background-color: var(--purple);
     border-radius: 5px;
     padding: 4px;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 #termin:hover, #termin:active{
     color: var(--purple);
@@ -101,7 +101,7 @@
     top: 55%;
     left: 65%;
     color: var(--darkbrown);
-    font-size: 3vw ;
+    font-size: 4vw ;
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 50%;
