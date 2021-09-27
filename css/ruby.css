@@ -19,6 +19,13 @@
     border-radius: 5px;
     color: var(--darkbrown);
 }
+@media screen and (max-width: 620px) {
+    #giveaway{
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+}
+
 .giveaway_text{
     text-align: center;
     color: #F50C27;
@@ -114,12 +121,15 @@
 
 /*image*/
 .image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     position: inherit; /*The inherit keyword specifies that a property should inherit its value from its parent element*/
     width: 75%;
     height: auto;
     border: 1px solid var(--darkpink);
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-content: center;
     margin-top: 40px;
     cursor: pointer;
     transition: 0.25s ease-in-out;

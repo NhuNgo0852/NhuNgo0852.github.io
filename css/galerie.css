@@ -14,6 +14,17 @@
     margin-top: 30px;
     padding: 20px;
 }
+@media screen and (max-width:580px) {
+    .img_gallery{
+        column-count: 3;
+    }
+}
+@media screen and (max-width: 480px){
+    .img_gallery{
+        column-count: 2;
+    }
+}
+
 .thumbnail{
     display: inline-block;
     margin-bottom: 10px;
