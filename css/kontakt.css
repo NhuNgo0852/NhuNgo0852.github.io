@@ -17,6 +17,7 @@
     width: 400px;
     height: 300px;
 }
+
 /*Contact info*/
 #contact_info{
     display: inline-flex;
@@ -31,6 +32,7 @@
         height: 400px;
     }
 }
+
 /*Social and Icon Whatsapp & Instagram*/
 #social{
     align-self: center;
@@ -38,6 +40,7 @@
     padding: 30px 50px;
     text-align: center;
 }
+
 /*Text*/
 .social_text{
     text-decoration: none;
@@ -45,7 +48,7 @@
     color: black;
 }
 .social_web:hover, .social_web:active{
-    color: var(--lightpink);
+    color: var(--darkpink);
 }
 .icon_inline{
     display: inline-block;

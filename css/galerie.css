@@ -10,70 +10,19 @@
 }
 /*grid image*/
 .img_gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 10px;
-    margin-top: 70px;
+    column-count: 4;
+    margin-top: 30px;
+    padding: 20px;
 }
-.grid_img{
-    width: 100%;
-    height: auto;
+.thumbnail{
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
-/*Photo Animation*/
 .photo{
-    opacity: 0;
+    width: 100%;
+    transition: 0.25s ease-in-out;
 }
-@keyframes fadein{
-    0%{
-        transform: translateZ(1.5vw);
-    }
-    100%{
-        opacity: 1;
-        transform: translateZ(0);
-    }
-}
-.photo1{
-    animation: 2s fadein 0s forwards;
-}
-.photo2{
-    animation: 2s fadein 0.5s forwards;
-}
-.photo3{
-    animation: 2s fadein 1s forwards;
-}
-.photo4{
-    animation: 2s fadein 1.5s forwards;
-}
-.photo5{
-    animation: 2s fadein 2s forwards;
-}
-.photo6{
-    animation: 2s fadein 2.5s forwards;
-}
-.photo7{
-    animation: 2s fadein 3s forwards;
-}
-.photo8{
-    animation: 2s fadein 3.5s forwards;
-}
-.photo9{
-    animation: 2s fadein 4s forwards;
-}
-.photo10{
-    animation: 2s fadein 4.5s forwards;
-}
-.photo11{
-    animation: 2s fadein 5s forwards;
-}
-.photo12{
-    animation: 2s fadein 5.5s forwards;
-}
-.photo13{
-    animation: 2s fadein 6s forwards;
-}
-.photo14{
-    animation: 2s fadein 6.5s forwards;
-}
-.photo15{
-    animation: 2s fadein 7s forwards;
+.photo:hover{
+    transform: scale(1.1);
 }

@@ -19,8 +19,6 @@
 	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<!--Javascript-->
-	<script src="script.js" defer></script>	
 	<!-- Ion icon-->
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
@@ -30,7 +28,7 @@
 		<div class="item_group">
 			<!--Logo-->
 			<a id="logo" href="./index.html">
-				<img src="img/logo2.png">
+				<img src="img-gallery/logo2.png">
 			</a>
 			<!-- Home-->
 			<a id="home" class="nav_item" href="./index.html" > Home </a>
@@ -44,7 +42,7 @@
 			<a id="gift" class="nav_item" href="./gutschein.html"> Gutscheine </a>
 			<!--Image-->
 			<div class="banner_text">
-				<img id="banner" src="img/cover6.JPG">
+				<img id="banner" src="img-gallery/cover6.png">
 				<div id="welcome">
 					<div> Willkommen </div>
 					<div> RUBY Nails & Beauty </div>
@@ -53,7 +51,7 @@
 			</div>
 			<!--Rabatt-->
 			<div id="rabatt">
-				<div class="text1"><span> 5€ Gutschein für jeden Neukunden </span></div>
+				<div class="text1"><span> 30% RABATT auf Fußpflege </span></div>
 				<div class="text2"><span> 10% RABATT für Schülerinnen</span></div>
 				<div class="text3"><span> Wir geben für ALLE GELNÄGEL 7 Tage GARANTIE </span></div>
 			</div>	
@@ -61,9 +59,44 @@
 	</header>
 	<!--MAIN-->
 	<main>
+		<!--giveaway-->
+		<div id="giveaway">
+			<div class="giveaway_text">
+				<h2> 30% Rabatt auf Fußpflege </h2>
+				<h3> (01/10/2021 - 13/11/2021) </h3>
+			</div>
+			<!--countdown-->
+			<div class="countdown_time">
+				<h2> Endet in </h2>
+				<!--day-->
+				<div>
+					<h2 class="day"> Time </h2>
+					<span> Tage </span>
+				</div>
+				<!--hour-->
+				<div>
+					<h2 class="hour"> Time </h2>
+					<span> Std. </span>
+				</div>
+				<!--minute-->
+				<div>
+					<h2 class="minute"> Time </h2>
+					<span> Min. </span>
+				</div>
+				<!--second-->
+				<div>
+					<h2 class="second"> Time </h2>
+					<span> Sekunde </span>
+				</div>
+			</div>
+		</div>
+		<script src="countdown.js"></script>
+		<!--content-->
 		<div class="content">
 			<!--Nagels-->
-			<img class="image" id="img1" src="img/nagel1.jpg">	
+			<a target="_blank" rel="noopener" href="./galerie.html">
+				<img class="image" id="img1" src="img-gallery/nagel.png">
+			</a>
 			<div id="nail" class="text_group">
 				<div class="text">
 					<h2> Nägel </h2>
@@ -79,7 +112,9 @@
 				</span>
 			</div>
 			<!-- Wimpern-->
-			<img class="image" id="img2" src="img/wimpern1.jpg">
+			<a target="_blank" rel="noopener" href="./galerie.html">
+				<img class="image" id="img2" src="img-gallery/wimpern.png">
+			</a>
 			<div id="lash" class="text_group">
 				<div class="text">
 					<h2> Wimpernverlängerung </h2>
@@ -98,7 +133,9 @@
 				</span>
 			</div>
 			<!--Permanent Make up-->
-			<img class="image" id="img3" src="img/lips5.jpg">
+			<a target="_blank" rel="noopener" href="./galerie.html">
+				<img class="image" id="img3" src="img-gallery/lippen.png">
+			</a>
 			<div id="makeup" class="text_group">
 				<div class="text">
 					<h2> Permanent Make up </h2>
@@ -113,7 +150,9 @@
 				</span>
 			</div>
 			<!--Foot care-->
-			<img class="image" id="img4" src="img/cover8.JPG">
+			<a target="_blank" rel="noopener" href="./galerie.html">
+				<img class="image" id="img4" src="img-gallery/foot.png">
+			</a>
 			<div id="foot_care" class="text_group">
 				<div class="text">
 					<h2> Pediküre - kosmetische Fußpflege </h2>
@@ -130,7 +169,9 @@
 				</span>
 			</div>
 			<!--Waxing-->
-			<img class="image" id="img5" src="img/waxing.webp">
+			<a target="_blank" rel="noopener" href="./galerie.html">
+				<img class="image" id="img5" src="img-gallery/waxing.png">
+			</a>
 			<div id="waxing" class="text_group">
 				<div class="text">
 					<h2> Waxing </h2>
@@ -146,7 +187,9 @@
 				</span>
 			</div>
 			<!--Augenbrauen-->
-			<img class="image" id="img6" src="img/augenbrauen.jpg">
+			<a target="_blank" rel="noopener" href="./galerie.html">
+				<img class="image" id="img6" src="img-gallery/augenbrauen.png">
+			</a>
 			<div id="eyebrows" class="text_group">
 				<div class="text">
 					<h2> Augenbrauen- & Wimpernlifting </h2>
@@ -174,7 +217,7 @@
 				</span>
 				<span class="iconify icon_quote" data-icon="bx:bxs-quote-alt-right" data-inline="false"></span>
 			</div>
-			<img class="bonus_card" src="img/bonus_karte1.jpg">
+			<img class="bonus_card" src="img-gallery/bonus_karte1.jpg">
 		</div>
 	</main>
 	<!--FOOTER-->
@@ -188,6 +231,10 @@
 				</span>
 				<!--Social links-->
 				<h3> Kontaktieren Sie uns hier: </h3>
+				<p>
+					<b> Tel: </b> 
+					040 209 606 76
+				</p>
 				<!--Whatsapp-->
 				<a class="social_link" target="_blank" rel="noopener" href="http://wa.link/2rbxff">
 					<span class="iconify icon_social" data-icon="ion:logo-whatsapp" data-inline="false"></span>
