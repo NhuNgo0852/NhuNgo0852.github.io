@@ -17,6 +17,7 @@
     justify-items: center;
     margin-top: 50px;
     color: black;
+    font-size: x-large;
 }
 @media screen and (max-width: 860px) {
     .info{
@@ -63,6 +64,7 @@
     padding: 5px 0px;
     opacity: 0;
     animation: fadeup 1.5s forwards;
+    font-size: large;
 }
 .large_circle{
     width: 8px;
@@ -112,6 +114,7 @@
         transform: rotate(0deg);
     }
 }
+
 /*Map*/
 #map:link, #map:visited{
     text-decoration: none;

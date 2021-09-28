@@ -67,15 +67,16 @@
 .nav_item{
     align-self: center;
     text-align: center;
-    font-size: 1.5em;
+    font-size: xx-large;
 }
 .nav_item:link, .nav_item:visited{
     text-decoration: none;
     color: black;
 }
 .nav_item:hover, .nav_item:active{
-    color: var(--lightpink);
+    color: var(--darkpink);
 }
+
 /*Banner*/
 #banner{
     width: 100%;
@@ -116,15 +117,22 @@
     color: var(--darkbrown);
     font-size: 4vw ;
     background: rgba(255, 255, 255, 0.3);
-    padding: 20px;
+    padding: 35px;
     border-radius: 50%;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 980px){
     #welcome{
         top: 50%;
         left: 60%;
     }
 }
+@media screen and (max-width: 620px){
+    #welcome{
+        top: 40%;
+        left: 55%;
+    }
+}
+
 /*Animation*/
 /*Rabatt*/
 #rabatt{
@@ -134,8 +142,9 @@
     height: 100%;
     background-color: black;
     padding: 15px;
+    font-size: x-large;
 }
-.text1, .text2, .text3{
+.text1, .text2, .text3, .text4{
     color: white;
     position: absolute;
     right: 0;
@@ -148,14 +157,16 @@
     transform: translateY(-50%);
 }
 .text1{
-    animation: 12s slidedown 0s infinite;
+    animation: 16s slidedown 0s infinite;
 }
 .text2{
-    animation: 12s slidedown 4s infinite;
+    animation: 16s slidedown 4s infinite;
 }
-
 .text3{
-    animation: 12s slidedown 8s infinite;
+    animation: 16s slidedown 8s infinite;
+}
+.text4{
+    animation: 16s slidedown 12s infinite;
 }
 @keyframes slidedown{
     0%{
@@ -166,11 +177,11 @@
         opacity: 1;
         bottom: 0;
     }
-    30%{
+    20%{
         opacity: 1;
         bottom: 0;
     }
-    33%{
+    25%{
         opacity: 0;
         bottom: -20px;
     }

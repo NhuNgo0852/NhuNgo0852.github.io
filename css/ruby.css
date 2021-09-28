@@ -11,39 +11,38 @@
 }
 
 /*giveaway*/
-#giveaway{
+#sale{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 50px;
-    background-color: var(--yellow);
-    border-radius: 5px;
-    color: var(--darkbrown);
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 70px;
+    font-size: x-large;
+    background-color: var(--grey);
+    padding: 20px;
 }
 @media screen and (max-width: 620px) {
-    #giveaway{
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
+    #sale{
+        font-size: large;
+        grid-template-rows: repeat(3, 1fr);
     }
 }
 
-.giveaway_text{
-    text-align: center;
+/*sale*/
+.sale30{
+    font-size: xx-large;
     color: #F50C27;
-    animation: 0.9s linear ease-out;
+    text-align: right;
+    margin-right: 20px;
+}
+.sale_text{
+    list-style-type: none;
 }
 
 /*countdown time*/
 .countdown_time{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 .day, .hour, .minute, .second{
-    text-align: center;
-    border: solid 1px white;
-    background-color: white;
     padding: 10px;
-    color: var(--darkbrown);
 }
 
 /*content*/
@@ -64,8 +63,8 @@
         "img6";
     margin: 40px;
 }
-/*media????*/
-@media screen and (min-width: 620px) {
+/*media*/
+@media screen and (min-width: 890px) {
     .content{
         grid-template-areas: 
             "text1 img1"
@@ -100,23 +99,46 @@
 .text_group{
     position: relative;
     align-self: center;
+    justify-content: center;
     display: inline-flex;
+    font-size: x-large;
+}
+.text{
+    border-bottom: solid black;
 }
 
-/*Button*/
-.button_index{
+/*link price & gallery*/
+.price_link, .gallery_link{
     position: absolute;
-    top: 90%;
-    left: 10%;
-}
-/*Price button*/
-.price:link, .price:visited{
+    top: 95%;
     text-decoration: none;
     color: black;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
 }
-.price:hover, .price:active{
-    color: white;
-    transition: color .2s ease;
+@media screen and (max-width: 450px) {
+        .gallery_link{
+            right: 25%;
+        }
+}
+
+/*link price*/
+.price_link:link, .price_link:visited{
+    left: 10%;
+}
+.price_link:hover, .price_link:active{
+    color: var(--darkpink);
+    transform: scale(1.1);
+}
+
+/*link gallery*/
+.gallery_link:link, .gallery_link:visited{
+    right: 45%;
+}
+.gallery_link:hover, .gallery_link:active{
+    color: var(--darkpink);
+    transform: scale(1.1);
 }
 
 /*image*/
@@ -165,14 +187,15 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    margin-top: 70px;
 }
 .text_left{
     color: white;
-    padding: 20px;
+    padding: 40px;
+    font-size: large;
 }
 @media screen and (max-width: 700px){
     .bonus_card{
-        margin: 30px;
         width: 70%;
         height: auto;
     }
