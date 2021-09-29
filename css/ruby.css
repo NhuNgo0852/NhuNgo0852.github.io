@@ -108,31 +108,27 @@
     justify-content: center;
     display: inline-flex;
     font-size: x-large;
+    border-bottom: solid black;
 }
 .text{
-    border-bottom: solid black;
+    padding: 20px;
 }
 /******************************************/
 
 /*link price & gallery*/
 .price_link, .gallery_link{
     position: absolute;
-    top: 95%;
+    right: 5%;
     text-decoration: none;
     color: black;
     padding: 20px;
     cursor: pointer;
     transition: 0.25s ease-in-out;
 }
-@media screen and (max-width: 450px) {
-        .gallery_link{
-            right: 25%;
-        }
-}
 
 /*link price*/
 .price_link:link, .price_link:visited{
-    left: 10%;
+    top: 80%;
 }
 .price_link:hover, .price_link:active{
     color: var(--darkpink);
@@ -141,7 +137,7 @@
 
 /*link gallery*/
 .gallery_link:link, .gallery_link:visited{
-    right: 45%;
+    top: 95%;
 }
 .gallery_link:hover, .gallery_link:active{
     color: var(--darkpink);
