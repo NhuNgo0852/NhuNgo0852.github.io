@@ -19,9 +19,16 @@
     color: black;
     font-size: x-large;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 980px) {
     .info{
         grid-template-columns: repeat(2, 1fr);
+        justify-items: left;
+    }
+}
+@media screen and (max-width: 480px) {
+    .info{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
         justify-items: left;
     }
 }
