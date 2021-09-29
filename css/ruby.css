@@ -64,7 +64,6 @@
         "img5"
         "text6"
         "img6";
-    margin: 40px;
 }
 /*media*/
 @media screen and (min-width: 890px) {
@@ -76,7 +75,7 @@
             "img4 text4"
             "text5 img5"
             "img6 text6";
-        gap: 50px;
+        gap: 30px;
     }
 }
 /*Text group*/
@@ -150,12 +149,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    position: inherit; /*The inherit keyword specifies that a property should inherit its value from its parent element*/
     width: 75%;
     height: auto;
     border: 1px solid var(--darkpink);
-    align-items: center;
-    justify-content: center;
     margin-top: 40px;
 }
 #img1{
