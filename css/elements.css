@@ -22,12 +22,16 @@
     transition: background-color .2s ease;
     color: white;
 }
+/******************************************/
+
 /*Input*/
 .footer_input{
     padding: 5px;
     border: 1px solid var(--lightpink);
     display: inline-block;
 }
+/******************************************/
+
 /*Icon social*/
 .icon_social{
     width: 1.5em;

@@ -25,6 +25,8 @@
         justify-items: left;
     }
 }
+/******************************************/
+
 /*Social link & icon*/
 .social_link{
     text-decoration: none;
@@ -47,6 +49,8 @@
 #quicklinks{
     list-style-type: none;
 }
+/******************************************/
+
 /*Chat pop-up*/
 .chat:link, .chat:visited{
     text-decoration: none;
@@ -114,6 +118,7 @@
         transform: rotate(0deg);
     }
 }
+/******************************************/
 
 /*Map*/
 #map:link, #map:visited{

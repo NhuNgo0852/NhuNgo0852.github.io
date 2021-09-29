@@ -36,6 +36,7 @@
 }
 .sale_text{
     list-style-type: none;
+    margin-bottom: 20px;
 }
 
 /*countdown time*/
@@ -45,6 +46,7 @@
 .day, .hour, .minute, .second{
     padding: 10px;
 }
+/************************************/
 
 /*content*/
 .content{
@@ -96,6 +98,9 @@
 #eyebrows{
     grid-area: text6;
 }
+
+/******************************************/
+
 /*text in grid div*/
 .text_group{
     position: relative;
@@ -107,6 +112,7 @@
 .text{
     border-bottom: solid black;
 }
+/******************************************/
 
 /*link price & gallery*/
 .price_link, .gallery_link{
@@ -141,6 +147,7 @@
     color: var(--darkpink);
     transform: scale(1.1);
 }
+/******************************************/
 
 /*image*/
 .image{
@@ -179,6 +186,7 @@
 #img6{
     grid-area: img6;
 }
+/******************************************/
 
 /*Membership card*/
 .membership{

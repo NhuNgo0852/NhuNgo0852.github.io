@@ -21,6 +21,8 @@
     margin: 0px 50px;
     text-align: center;
 }
+/******************************************/
+
 /*Box list*/
 .box_list{
     margin-top: 70px;
@@ -41,11 +43,15 @@
     background-color: var(--darkpink);
     color: white;
 }
+/******************************************/
+
 /*Price list table*/
 .grid_price{
     display: flex;
     justify-content: center;
-}  
+} 
+/******************************************/
+
 /*Title*/
 .title{
     background-color: var(--darkpink);
@@ -53,6 +59,8 @@
     text-align: center;
     padding: 1px 0px;
 }
+/******************************************/
+
 /*Nail studio*/
 #nail_studio{
     display: grid;
@@ -103,6 +111,8 @@
 .euro3{
     grid-area: euro3;
 }
+/******************************************/
+
 /*List*/
 .name1, .euro1 > li{
     white-space: nowrap;
@@ -119,6 +129,8 @@
     list-style-type: none;
     padding-left: 20px;
 }
+/******************************************/
+
 /*schönheit*/
 #others{
     display: grid;

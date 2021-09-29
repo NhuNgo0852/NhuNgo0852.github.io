@@ -63,6 +63,8 @@
 #gift{
     grid-area: gift;
 }
+/******************************************/
+
 /*nav-item*/
 .nav_item{
     align-self: center;
@@ -76,6 +78,7 @@
 .nav_item:hover, .nav_item:active{
     color: var(--darkpink);
 }
+/******************************************/
 
 /*Banner*/
 #banner{
@@ -107,6 +110,8 @@
     border: 1px solid var(--lightpink);
     background-color: var(--lightpink);
 }
+/******************************************/
+
 /*Welcome*/
 #welcome{
     position: absolute;
@@ -132,6 +137,7 @@
         left: 55%;
     }
 }
+/******************************************/
 
 /*Animation*/
 /*Rabatt*/
@@ -143,6 +149,11 @@
     background-color: black;
     padding: 15px;
     font-size: x-large;
+}
+@media screen and (max-width:620px){
+    #rabatt{
+        font-size: large;
+    }
 }
 .text1, .text2, .text3, .text4{
     color: white;
