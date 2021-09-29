@@ -17,7 +17,7 @@
     justify-items: center;
     margin-top: 50px;
     color: black;
-    font-size: x-large;
+    font-size: larger;
 }
 @media screen and (max-width: 980px) {
     .info{

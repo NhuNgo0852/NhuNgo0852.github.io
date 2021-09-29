@@ -118,7 +118,7 @@
 /*link price & gallery*/
 .price_link, .gallery_link{
     position: absolute;
-    right: 5%;
+    right: 0;
     text-decoration: none;
     color: var(--darkpink);
     padding: 20px;
