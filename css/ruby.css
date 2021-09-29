@@ -107,7 +107,6 @@
     justify-content: center;
     display: inline-flex;
     font-size: larger;
-    border-bottom: solid black;
 }
 .text{
     padding: 20px;
@@ -118,6 +117,7 @@
 /*link price & gallery*/
 .price_link, .gallery_link{
     position: absolute;
+    top: 80%;
     right: 0;
     text-decoration: none;
     color: var(--darkpink);
@@ -128,7 +128,7 @@
 
 /*link price*/
 .price_link:link, .price_link:visited{
-    top: 80%;
+    left: 10%;
 }
 .price_link:hover, .price_link:active{
     color: var(--grey);
@@ -137,11 +137,21 @@
 
 /*link gallery*/
 .gallery_link:link, .gallery_link:visited{
-    top: 95%;
+    right: 40%;
 }
 .gallery_link:hover, .gallery_link:active{
     color: var(--grey);
     transform: scale(1.1);
+}
+@media screen and (max-width: 850px){
+    .gallery_link:link, .gallery_link:visited{
+        right: 40%;
+    }
+}
+@media screen and (max-width: 450px){
+    .gallery_link:link, .gallery_link:visited{
+        right: 30%;
+    }
 }
 /******************************************/
 
