@@ -11,25 +11,24 @@
 /*footer*/
 .info{
     background-color: var(--lightpink);
-    padding: 20px 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
     margin-top: 50px;
     color: black;
     font-size: larger;
+    padding: 20px 0px;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 950px) {
     .info{
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: left;
+        padding-left: 40px;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
     .info{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        justify-items: left;
+        padding-left: 40px;
     }
 }
 /******************************************/
@@ -52,9 +51,6 @@
 }
 .q_link:hover, .q_link:active{
     color: var(--darkbrown);
-}
-#quicklinks{
-    list-style-type: none;
 }
 /******************************************/
 
