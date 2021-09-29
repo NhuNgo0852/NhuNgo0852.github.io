@@ -18,11 +18,13 @@
     font-size: x-large;
     background-color: var(--grey);
     padding: 20px;
+    text-align: center;
 }
 @media screen and (max-width: 620px) {
     #sale{
         font-size: large;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 }
 
@@ -30,7 +32,6 @@
 .sale30{
     font-size: xx-large;
     color: #F50C27;
-    text-align: right;
     margin-right: 20px;
 }
 .sale_text{
