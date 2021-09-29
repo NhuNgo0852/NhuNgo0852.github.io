@@ -131,7 +131,7 @@
     top: 80%;
 }
 .price_link:hover, .price_link:active{
-    color: var(--lightpink);
+    color: var(--grey);
     transform: scale(1.1);
 }
 
@@ -140,7 +140,7 @@
     top: 95%;
 }
 .gallery_link:hover, .gallery_link:active{
-    color: var(--lightpink);
+    color: var(--grey);
     transform: scale(1.1);
 }
 /******************************************/
