@@ -105,7 +105,6 @@
     position: relative;
     align-self: center;
     justify-content: center;
-    display: inline-flex;
     font-size: larger;
 }
 .text{
@@ -118,7 +117,6 @@
 .price_link, .gallery_link{
     position: absolute;
     top: 80%;
-    right: 0;
     text-decoration: none;
     color: var(--darkpink);
     padding: 20px;
