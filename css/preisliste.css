@@ -169,6 +169,18 @@
             "name9 euro9"
             "waxing waxing"
             "name10 euro10";
+        padding: 10px 20px 30px 20px;
+    }
+    #nail_studio{
+        padding: 10px 20px 30px 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #others{
+        padding: 10px 10px 20px 10px;
+    }
+    #nail_studio{
+        padding: 10px 10px 20px 10px;
     }
 }
 /*Grid area*/
