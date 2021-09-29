@@ -120,7 +120,7 @@
     position: absolute;
     right: 5%;
     text-decoration: none;
-    color: black;
+    color: var(--darkpink);
     padding: 20px;
     cursor: pointer;
     transition: 0.25s ease-in-out;
@@ -131,7 +131,7 @@
     top: 80%;
 }
 .price_link:hover, .price_link:active{
-    color: var(--darkpink);
+    color: var(--lightpink);
     transform: scale(1.1);
 }
 
@@ -140,7 +140,7 @@
     top: 95%;
 }
 .gallery_link:hover, .gallery_link:active{
-    color: var(--darkpink);
+    color: var(--lightpink);
     transform: scale(1.1);
 }
 /******************************************/
