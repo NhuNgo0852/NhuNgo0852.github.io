@@ -46,6 +46,11 @@
 .day, .hour, .minute, .second{
     padding: 10px;
 }
+@media screen and (max-width: 950px){
+    .date_text{
+        padding: 5px;
+    }
+}
 /************************************/
 
 /*content*/
