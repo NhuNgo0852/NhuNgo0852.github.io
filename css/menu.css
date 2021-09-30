@@ -71,6 +71,11 @@
     text-align: center;
     font-size: xx-large;
 }
+@media screen and (max-width: 900px) {
+    .nav_item{
+        padding: 15px;
+    }
+}
 .nav_item:link, .nav_item:visited{
     text-decoration: none;
     color: black;
