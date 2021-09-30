@@ -74,7 +74,7 @@
     border: 2px dotted var(--purple);
     background-color: var(--lightpink);
     border-radius: 10px;
-    padding: 10px 30px 30px 30px;
+    padding: 10px 20px 30px 20px;
     gap: 1px; 
 }
 /*Grid area*/
@@ -147,7 +147,7 @@
     border: 2px dotted var(--purple);
     background-color: var(--lightpink);
     border-radius: 10px;
-    padding: 10px 30px 30px 30px;
+    padding: 10px 20px 30px 20px;
     gap: 1px;
 }
 @media screen and (max-width: 650px) {
@@ -176,11 +176,11 @@
     }
 }
 @media screen and (max-width: 480px) {
-    #others{
-        padding: 5px 10px 20px 5px;
-    }
     #nail_studio{
-        padding: 5px 10px 20px 5px;
+        padding: 5px 5px 15px 5px;
+    }
+    #others{
+        padding: 5px 5px 15px 5px;
     }
 }
 /*Grid area*/
