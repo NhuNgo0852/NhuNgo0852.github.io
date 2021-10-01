@@ -1,3 +1,4 @@
+//countdown time
 const countdown = function () {
     const countDate = new Date("Nov 13, 2021 00:00:00").getTime();
     const now = new Date().getTime();
@@ -22,3 +23,5 @@ const countdown = function () {
 }
 
 setInterval(countdown, 1000);
+//--------------------------------
+
