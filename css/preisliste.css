@@ -77,7 +77,7 @@
     background-color: var(--lightpink);
     border-radius: 10px;
     gap: 1px; 
-    padding: 0px 5px 5px 5px;
+    padding: 0px 5px 10px 5px;
 }
 /*Grid area*/
 #new{
@@ -152,7 +152,7 @@
     background-color: var(--lightpink);
     border-radius: 10px;
     gap: 1px;
-    padding: 0px 5px 5px 5px;
+    padding: 0px 5px 10px 5px;
 }
 @media screen and (max-width: 650px) {
     #others{
