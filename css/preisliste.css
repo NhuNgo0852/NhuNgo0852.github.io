@@ -29,11 +29,14 @@
     text-align: center;
 }
 /*Box*/
-.box:link, .box:visited{
+.box{
     border-radius: 5px;
     margin: 10px;
     padding: 10px 5px;
     text-decoration: none;
+    font-size: large;
+}
+.box:link, .box:visited{
     border: 1px solid var(--lightpink);
     background-color: var(--lightpink);
     color: var(--purple);
@@ -123,11 +126,13 @@
 .list{
     text-align: right;
     list-style-type: none;
+    font-size: large;
 }
 .list_name{
     text-align: left;
     list-style-type: none;
     padding-left: 15px;
+    font-size: large;
 }
 /******************************************/
 

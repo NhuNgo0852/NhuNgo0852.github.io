@@ -10,7 +10,7 @@
 }
 .impressum_text{
     text-align: left;
-    font-size: 1.5vw;
+    font-size: large;
 }
 .link_impressum:link, .link_impressum:visited{
     color: blue;

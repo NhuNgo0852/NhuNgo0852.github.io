@@ -12,6 +12,7 @@
 /*gg-map*/
 #gg_map{
     text-align: center;
+    font-size: large;
 }
 #gg_map > iframe{
     width: 400px;
@@ -40,6 +41,7 @@
     justify-self: center;
     padding: 30px 50px;
     text-align: center;
+    font-size: large;
 }
 /******************************************/
 
