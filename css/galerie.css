@@ -33,7 +33,6 @@
 }
 .photo{
     width: 100%;
-    transition: 0.25s ease-in-out;
 }
 .photo:hover{
     transform: scale(1.1);
