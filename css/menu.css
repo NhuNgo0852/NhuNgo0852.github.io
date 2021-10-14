@@ -52,6 +52,7 @@
     .navbar{
         font-size: x-large;
         margin-bottom: 5px;
+        padding: 10px;
         background-color: var(--lightpink);
     }
 }
