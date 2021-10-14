@@ -216,7 +216,8 @@
     .bonus_card{
         margin: 0 auto 20px auto;
     }
-    .text_left{
+    .card_text{
         padding: 10px;
+        font-size: small;
     }
 }
