@@ -195,12 +195,13 @@
     background-color: var(--darkpink);
     margin: 70px;
 }
-.text_left{
+.card_text{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     color: white;
     padding: 40px;
+    font-size: larger;
 }
 .bonus_card{
     display: block;

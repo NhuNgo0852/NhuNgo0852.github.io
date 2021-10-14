@@ -11,6 +11,9 @@
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/elements.css">
+	<!--Javascript-->
+	<script src="navbar.js"></script>
+	<script src="popUp.js"></script>
 	<!--Favicon-->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -21,7 +24,6 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- Ion icon-->
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-	<!-- sript?-->
 </head>
 <body>
 	<!--HEADER-->
@@ -31,19 +33,26 @@
 			<a id="logo" href="./index.html">
 				<img src="img-gallery/logo2.png">
 			</a>
-			<!-- Home-->
-			<a id="home" class="nav_item" href="./index.html" > Home </a>
-			<!-- Price list-->
-			<a id="cost" class="nav_item" href="./preisliste.html"> Preisliste </a>
-			<!-- Contact -->
-			<a id="contact" class="nav_item" href="./kontakt.html"> Kontakt </a>
-			<!-- Galery -->
-			<a id="gallery" class="nav_item" href="./galerie.html"> Galerie </a>
-			<!--Gift-->
-			<a id="gift" class="nav_item" href="./gutschein.html"> Gutscheine </a>
+			<!-- Navbar-->
+			<div class="navbar">
+				<!-- Home-->
+				<a id="home" class="nav_item" href="./index.html" > Home </a>
+				<!-- Price list-->
+				<a id="cost" class="nav_item" href="./preisliste.html"> Preisliste </a>
+				<!-- Contact -->
+				<a id="contact" class="nav_item" href="./kontakt.html"> Kontakt </a>
+				<!-- Galery -->
+				<a id="gallery" class="nav_item" href="./galerie.html"> Galerie </a>
+				<!--Gift-->
+				<a id="gift" class="nav_item" href="./gutschein.html"> Gutscheine </a>
+			</div>
+			<!--Menu button-->
+			<div class="menu_icon" >
+				<span class="iconify" data-icon="ion:menu" data-width="50px" data-height="50px"></span>
+			</div>
 			<!--Image-->
 			<div class="banner_text">
-				<img id="banner" src="img-gallery/cover3.png">
+				<img id="banner_img" src="img-gallery/cover3.png">
 				<div id="welcome">
 					<div> Willkommen </div>
 					<div> RUBY Nails & Beauty </div>
@@ -64,234 +73,159 @@
 		<!--Image gallery-->
 		<div class="img_gallery">
 			<!--nails 1-->
-			<a class="slide preview_img" href="img-gallery/nails1.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails1.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails1.png">
+				<img class="photo" src="img-gallery/nails1.png" alt="">
 			</a>
 			<!--eyebrows 1-->
-			<a class="slide preview_img" href="img-gallery/eyebrows1.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/eyebrows1.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/eyebrows1.png">
+				<img class="photo" src="img-gallery/eyebrows1.png" alt="">
 			</a>
 			<!--nails 2-->
-			<a class="slide preview_img" href="img-gallery/nails2.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails2.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails2.png">
+				<img class="photo" src="img-gallery/nails2.png" alt="">
 			</a>
 			<!--eyebrows 5-->
-			<a class="slide preview_img" href="img-gallery/eyebrows5.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/eyebrows5.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/eyebrows5.png">
+				<img class="photo" src="img-gallery/eyebrows5.png" alt="">
 			</a>
 			<!--nails 3-->
-			<a class="slide preview_img" href="img-gallery/nails3.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails3.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails3.png">
+				<img class="photo" src="img-gallery/nails3.png" alt="">
 			</a>
 			<!--lash 1-->
-			<a class="slide preview_img" href="img-gallery/lash1.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lash1.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/lash1.png">
+				<img class="photo" src="img-gallery/lash1.png" alt="">
 			</a>
 			<!--nails 4-->
-			<a class="slide preview_img" href="img-gallery/nails4.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails4.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails4.png">
+				<img class="photo" src="img-gallery/nails4.png" alt="">
 			</a>
 			<!--nails 5-->
-			<a class="slide preview_img" href="img-gallery/nails5.png">	
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails5.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails5.png">	
+				<img class="photo" src="img-gallery/nails5.png" alt="">
 			</a>
 			<!--eyebrows 3-->
-			<a class="slide preview_img" href="img-gallery/eyebrows3.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/eyebrows3.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/eyebrows3.png">
+				<img class="photo" src="img-gallery/eyebrows3.png" alt="">
 			</a>
 			<!--nails 24-->
-			<a class="slide preview_img" href="img-gallery/nails24.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails24.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails24.png">
+				<img class="photo" src="img-gallery/nails24.png" alt="">
 			</a>
 			<!--lash 7-->
-			<a class="slide preview_img" href="img-gallery/lash7.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lash7.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/lash7.png">
+				<img class="photo" src="img-gallery/lash7.png" alt="">
 			</a>
 			<!--nails 6-->
-			<a class="slide preview_img" href="img-gallery/nails6.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails6.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails6.png">
+				<img class="photo" src="img-gallery/nails6.png" alt="">
 			</a>
 			<!--lash 2-->
-			<a class="slide preview_img" href="img-gallery/lash2.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lash2.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/lash2.png">
+				<img class="photo" src="img-gallery/lash2.png" alt="">
 			</a>
 			<!--nails 7-->
-			<a class="slide preview_img" href="img-gallery/nails7.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails7.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails7.png">
+				<img class="photo" src="img-gallery/nails7.png" alt="">
 			</a>
 			<!--nails 8-->
-			<a class="slide preview_img" href="img-gallery/nails8.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails8.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails8.png">
+				<img class="photo" src="img-gallery/nails8.png" alt="">
 			</a>
 			<!--lips 2-->
-			<a class="slide preview_img" href="img-gallery/lips2.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lips2.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/lips2.png">
+				<img class="photo" src="img-gallery/lips2.png" alt="">
 			</a>
 			<!--nails 22-->
-			<a id="foot22" class="slide preview_img" href="img-gallery/nails22.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails22.png" alt="">
-				</div>
+			<a class="thumbnail" id="foot22" href="img-gallery/nails22.png">
+				<img class="photo" src="img-gallery/nails22.png" alt="">
 			</a>
 			<!--lash 3-->
-			<a class="slide preview_img" href="img-gallery/lash3.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lash3.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/lash3.png">
+				<img class="photo" src="img-gallery/lash3.png" alt="">
 			</a>
 			<!--nails 10-->
-			<a class="slide preview_img" href="img-gallery/nails10.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails10.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails10.png">
+				<img class="photo" src="img-gallery/nails10.png" alt="">
 			</a>
 			<!--eyebrows 4-->
-			<a class="slide preview_img" href="img-gallery/eyebrows4.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/eyebrows4.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/eyebrows4.png">
+				<img class="photo" src="img-gallery/eyebrows4.png" alt="">
 			</a>
 			<!--nails 11-->
-			<a class="slide preview_img" href="img-gallery/nails11.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails11.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails11.png">
+				<img class="photo" src="img-gallery/nails11.png" alt="">
 			</a>
 			<!--lips 4-->
-			<a class="slide preview_img" href="img-gallery/lips4.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lips4.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/lips4.png">
+				<img class="photo" src="img-gallery/lips4.png" alt="">
 			</a>
 			<!--nails 12-->
-			<a class="slide preview_img" href="img-gallery/nails12.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails12.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails12.png">
+				<img class="photo" src="img-gallery/nails12.png" alt="">
 			</a>
 			<!--lash 4-->
-			<a class="slide preview_img" href="img-gallery/lash4.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lash4.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/lash4.png">
+				<img class="photo" src="img-gallery/lash4.png" alt="">
 			</a>
 			<!--nails 18-->
-			<a id="nails18" class="slide preview_img" href="img-gallery/nails18.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails18.png">
-				</div>
+			<a class="thumbnail" id="nails18" href="img-gallery/nails18.png">
+				<img class="photo" src="img-gallery/nails18.png" alt="">
 			</a>
 			<!--lash 9-->
-			<a class="slide preview_img" href="img-gallery/lash9.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lash9.png" alt="">
-				</div>
-			</a>
-			<!--nails 14-->
-			<a href="img-gallery/nails14.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails14.png" alt="">
-				</div>
-			</a>
-			<!--lash 5-->
-			<a class="slide preview_img" href="img-gallery/lash5.jpg">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lash5.jpg" alt="">
-				</div>
-			</a>
-			<!--nails 13-->
-			<a class="slide preview_img" href="img-gallery/nails13.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails13.png" alt="">
-				</div>
-			</a>
-			<!--nails 19-->
-			<a class="slide preview_img" href="img-gallery/nails19.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails19.png" alt="">
-				</div>
-			</a>
-			<!--lash 8-->
-			<a id="lash8" class="slide preview_img" href="img-gallery/lash8.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lash8.png" alt="">
-				</div>
-			</a>
-			<!--nails 16-->
-			<a class="slide preview_img" href="img-gallery/nails16.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails16.png" alt="">
-				</div>
-			</a>
-			<!--lash 6-->
-			<a id="lash6" class="slide preview_img" href="img-gallery/lash6.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lash6.png" alt="">
-				</div>
-			</a>
-			<!--nails 17-->
-			<a class="slide preview_img" href="img-gallery/nails17.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails17.png" alt="">
-				</div>
-			</a>
-			<!--nails 15-->
-			<a class="slide preview_img" href="img-gallery/nails15.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails15.png" alt="">
-				</div>
-			</a>
-			<!--nails 20-->
-			<a class="slide preview_img" href="img-gallery/nails20.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails20.png" alt="">
-				</div>
-			</a>
-			<!--lips 3-->
-			<a id="lips3" class="slide preview_img" href="img-gallery/lips3.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/lips3.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/lash9.png">
+				<img class="photo" src="img-gallery/lash9.png" alt="">
 			</a>
 			<!--nails 21-->
-			<a class="slide preview_img" href="img-gallery/nails21.png">
-				<div class="thumbnail">
-					<img class="photo" src="img-gallery/nails21.png" alt="">
-				</div>
+			<a class="thumbnail" href="img-gallery/nails21.png">
+				<img class="photo" src="img-gallery/nails21.png" alt="">
+			</a>
+			<!--lash 5-->
+			<a class="thumbnail" href="img-gallery/lash5.jpg">
+				<img class="photo" src="img-gallery/lash5.jpg" alt="">
+			</a>
+			<!--nails 13-->
+			<a class="thumbnail" href="img-gallery/nails13.png">
+				<img class="photo" src="img-gallery/nails13.png" alt="">
+			</a>
+			<!--nails 19-->
+			<a class="thumbnail" href="img-gallery/nails19.png">
+				<img class="photo" src="img-gallery/nails19.png" alt="">
+			</a>
+			<!--lash 8-->
+			<a class="thumbnail" id="lash8" href="img-gallery/lash8.png">
+				<img class="photo" src="img-gallery/lash8.png" alt="">
+			</a>
+			<!--nails 16-->
+			<a class="thumbnail" href="img-gallery/nails16.png">
+				<img class="photo" src="img-gallery/nails16.png" alt="">
+			</a>
+			<!--lash 6-->
+			<a class="thumbnail" id="lash6" href="img-gallery/lash6.png">
+				<img class="photo" src="img-gallery/lash6.png" alt="">
+			</a>
+			<!--nails 17-->
+			<a class="thumbnail" href="img-gallery/nails17.png">
+				<img class="photo" src="img-gallery/nails17.png" alt="">
+			</a>
+			<!--nails 15-->
+			<a class="thumbnail" href="img-gallery/nails15.png">
+				<img class="photo" src="img-gallery/nails15.png" alt="">
+			</a>
+			<!--nails 20-->
+			<a class="thumbnail" href="img-gallery/nails20.png">
+				<img class="photo" src="img-gallery/nails20.png" alt="">
+			</a>
+			<!--lips 3-->
+			<a class="thumbnail" id="lips3" href="img-gallery/lips3.png">
+				<img class="photo" src="img-gallery/lips3.png" alt="">
+			</a>
+			<!--nails 14-->
+			<a class="thumbnail" href="img-gallery/nails14.png">
+				<img class="photo" src="img-gallery/nails14.png" alt="">
 			</a>
 		</div>
+		<!-- Button gallery-->
 		<div class="button_gallery">
 			<!--Facebook-->
 			<button class="button">
