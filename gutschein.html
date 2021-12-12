@@ -33,7 +33,7 @@
 				<img src="img-gallery/logo2.png">
 			</a>
 			<!-- Navbar-->
-			<div class="navbar">
+			<div id="navbar" class="active">
 				<!-- Home-->
 				<a id="home" class="nav_item" href="./index.html" > Home </a>
 				<!-- Price list-->
@@ -46,8 +46,11 @@
 				<a id="gift" class="nav_item" href="./gutschein.html"> Gutscheine </a>
 			</div>
 			<!--Menu button-->
-			<div class="menu_icon" >
+			<div id="menu_icon" class="active">
 				<span class="iconify" data-icon="ion:menu" data-width="50px" data-height="50px"></span>
+			</div>
+			<div id="close_icon">
+				<span class="iconify" data-icon="ion:close" data-width="50px" data-height="50px"></span>
 			</div>
 			<!--Image-->
 			<div class="banner_text">
@@ -71,8 +74,10 @@
     <main>
 		<div class="coupon_gift">
 			<!--Coupon 5€-->
-			<img class="coupon1" src="img-gallery/gift4.jpg">
-			<img class="coupon2" src="img-gallery/gift3.jpg">
+			<div class="coupon_img">
+				<img class="coupon1" src="img-gallery/gift4.jpg">
+				<img class="coupon2" src="img-gallery/gift3.jpg">
+			</div>
 			<!-- Coupon gift-->
 			<div class="coupon_text">
 				<h3> Sie möchten etwas Besonderes verschenken? </h3> 
@@ -93,7 +98,7 @@
 				</li>
 			</div>
 			<img class="coupon3" src="img-gallery/gift.JPG">
-			<h3> Vielen Dank für Ihre Treue </h3>
+			<h3 class="slogan"> Vielen Dank für Ihre Treue </h3>
 		</div>
     </main>
 	<!--FOOTER-->

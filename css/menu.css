@@ -11,19 +11,25 @@
 /*Navbar*/
 .item_group{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-areas: 
-        "logo navbar navbar navbar navbar navbar menu_icon"
-        "banner_text banner_text banner_text banner_text banner_text banner_text banner_text"
-        "rabatt rabatt rabatt rabatt rabatt rabatt rabatt";
+        "logo menu_icon navbar navbar navbar navbar navbar close_icon"
+        "banner_text banner_text banner_text banner_text banner_text banner_text banner_text banner_text"
+        "rabatt rabatt rabatt rabatt rabatt rabatt rabatt rabatt";
 }
 #logo{
     grid-area: logo;
+    margin-top: auto;
+    margin-left: auto;
 }
-.navbar{
+#navbar{
     grid-area: navbar;
 }
-.menu_icon{
+#close_icon{
+    grid-area: close_icon;
+    display: none;
+}
+#menu_icon{
     grid-area: menu_icon;
     display: none;
 }
@@ -33,23 +39,23 @@
 /******************************************/
 
 /*nav bar*/
-.navbar{
+#navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: xx-large;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1120px) {
     .item_group{
         grid-template-columns: repeat(5, 1fr);
         grid-template-areas: 
             ". . logo . ."
-            ". . menu_icon . ."
+            ". . menu_icon . close_icon"
             "navbar navbar navbar navbar navbar"
             "banner_text banner_text banner_text banner_text banner_text"
             "rabatt rabatt rabatt rabatt rabatt";
     }
-    .navbar{
+    #navbar{
         font-size: x-large;
         margin-bottom: 5px;
         padding: 10px;
@@ -57,13 +63,22 @@
     }
 }
 @media screen and (max-width: 550px) {
-    .menu_icon{
-        display: block;
+    #close_icon{
+        display: inline-block;
+        align-items: center;
+        justify-content: right;
     }
-    .navbar{
+    #menu_icon{
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+    #navbar{
         display: grid;
         grid-template-rows: repeat(5, 1fr);
         align-self: center;
+        text-align: center;
         font-size: x-large;
         background-color: white;
     }
@@ -165,16 +180,13 @@
     transform: translateY(-50%);
 }
 .text1{
-    animation: 16s slidedown 0s infinite;
+    animation: 12s slidedown 0s infinite;
 }
 .text2{
-    animation: 16s slidedown 4s infinite;
+    animation: 12s slidedown 4s infinite;
 }
 .text3{
-    animation: 16s slidedown 8s infinite;
-}
-.text4{
-    animation: 16s slidedown 12s infinite;
+    animation: 12s slidedown 8s infinite;
 }
 @keyframes slidedown{
     0%{

@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/elements.css">
+        <link rel="stylesheet" href="css/impressum.css">
         <!--Javascript-->
         <script src="navbar.js"></script>
         <!--Favicon-->
@@ -32,7 +33,7 @@
                     <img src="img-gallery/logo2.png">
                 </a>
                 <!-- Navbar-->
-                <div class="navbar">
+                <div id="navbar" class="active">
                     <!-- Home-->
                     <a id="home" class="nav_item" href="./index.html" > Home </a>
                     <!-- Price list-->
@@ -45,12 +46,15 @@
                     <a id="gift" class="nav_item" href="./gutschein.html"> Gutscheine </a>
                 </div>
                 <!--Menu button-->
-                <div class="menu_icon" >
+                <div id="menu_icon" class="active">
                     <span class="iconify" data-icon="ion:menu" data-width="50px" data-height="50px"></span>
+                </div>
+                <div id="close_icon">
+                    <span class="iconify" data-icon="ion:close" data-width="50px" data-height="50px"></span>
                 </div>
                 <!--Image-->
                 <div class="banner_text">
-                    <img id="banner_img" src="img-gallery/cover4.png">
+                    <img id="banner_img" src="img-gallery/cover4.gif">
                     <div id="welcome">
                         <div> Willkommen </div>
                         <div> RUBY Nails & Beauty </div>

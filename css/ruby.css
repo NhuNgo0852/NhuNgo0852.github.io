@@ -29,6 +29,10 @@
 }
 
 /*sale*/
+#sale{
+    align-items: center;
+    justify-content: center;
+}
 .sale30{
     font-size: xx-large;
     color: #F50C27;
