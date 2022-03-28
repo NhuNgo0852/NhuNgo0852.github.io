@@ -191,7 +191,7 @@
 .membership{
     display: flex; /*Display Grid & Grid-template-column don't work well with the Text & Image, the items aren't responsive  */
     background-color: var(--darkpink);
-    margin-top: 15px;
+    margin-top: 60px;
     font-size: x-large;
 }
 .card_text{
