@@ -12,7 +12,6 @@
 /*gg-map*/
 #gg_map{
     text-align: center;
-    font-size: large;
 }
 #gg_map > iframe{
     width: 350px;
@@ -22,11 +21,13 @@
 
 /*Contact info*/
 #contact_info{
-    display: inline-flex;
-    flex-flow: row wrap;
+    display: flex; /*what is difference between Flex and Inline-flex*/
+    flex-flow: row wrap; 
+    /*Flex-flow = Flex-direction: row/column + Flex-wrap:wrap (the flexible items will wrap if necessary)*/
     justify-content: center;
     width: 100%;
     margin-top: 50px;
+    font-size: x-large;
 }
 @media screen and (min-width: 600px) {
     #gg_map > iframe{
@@ -41,7 +42,6 @@
     justify-self: center;
     padding: 30px 50px;
     text-align: center;
-    font-size: large;
 }
 /******************************************/
 
@@ -55,5 +55,5 @@
     color: var(--darkpink);
 }
 .icon_inline{
-    display: inline-block;
+    display: inline-block; /*To display list items horizontally instead of vertically*/
 }

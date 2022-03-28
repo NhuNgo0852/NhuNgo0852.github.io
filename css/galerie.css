@@ -10,7 +10,7 @@
 }
 /*grid image*/
 .img_gallery{
-    column-count: 4;
+    column-count: 4; /*Divide the items in the <div> element into 4 columns*/
     margin-top: 30px;
     padding: 20px;
 }
@@ -25,11 +25,18 @@
     }
 }
 /******************************************/
+#close_img, #preview, #next{
+    display: none;
+}
+
+/******************************************/
 
 .thumbnail{
     display: inline-block;
     margin-bottom: 10px;
-    overflow: hidden;
+    overflow: hidden; 
+    /*To clip the content to fit in the specified area, 
+    hidden - The overflow is clipped and the rest of the content will be invisible*/
 }
 .photo{
     width: 100%;

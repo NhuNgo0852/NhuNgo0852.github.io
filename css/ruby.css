@@ -42,49 +42,35 @@
     list-style-type: none;
     margin-bottom: 20px;
 }
-
-/*countdown time*/
-.countdown_time{
-    display: flex;
-}
-.day, .hour, .minute, .second{
-    padding: 10px;
-}
-@media screen and (max-width: 950px){
-    .date_text{
-        padding: 5px;
-    }
-}
 /************************************/
 
 /*content*/
 .content{
     display: grid;
-    grid-template-areas:
-        "text1"
-        "img1"
-        "text2"
-        "img2"
-        "text3"
-        "img3"
-        "text4"
-        "img4"
-        "text5"
-        "img5"
-        "text6"
-        "img6";
+    grid-template-areas: 
+        "text1 img1"
+        "img2 text2"
+        "text3 img3"
+        "img4 text4"
+        "text5 img5"
+        "img6 text6";
 }
 /*media*/
-@media screen and (min-width: 890px) {
+@media screen and (max-width: 1100px) {
     .content{
-        grid-template-areas: 
-            "text1 img1"
-            "img2 text2"
-            "text3 img3"
-            "img4 text4"
-            "text5 img5"
-            "img6 text6";
-        gap: 30px;
+        grid-template-areas:
+            "img1"
+            "text1"
+            "img2"
+            "text2"
+            "img3"
+            "text3"
+            "img4"
+            "text4"
+            "img5"
+            "text5"
+            "img6"
+            "text6";
     }
 }
 /*Text group*/
@@ -111,27 +97,27 @@
 
 /*text in grid div*/
 .text_group{
-    position: relative;
+    position: relative; 
     align-self: center;
     justify-content: center;
-    font-size: larger;
+    font-size: x-large;
 }
 .text{
+    margin: 30px;
     padding: 20px;
-    margin-bottom: 30px;
-    margin-left: 20px;
 }
 /******************************************/
 
 /*link price & gallery*/
 .price_link, .gallery_link{
-    position: absolute;
+    position: absolute; /*Position of Price & Gallery link is fix because of Position relative of Parents Div (.text_group)*/
     top: 80%;
-    text-decoration: none;
+    text-decoration: none; /*To make blue color and line of Link are invisible*/
     color: var(--darkpink);
     padding: 20px;
     cursor: pointer;
     transition: 0.25s ease-in-out;
+    font-weight: bold;
 }
 
 /*link price*/
@@ -139,7 +125,8 @@
     left: 10%;
 }
 .price_link:hover, .price_link:active{
-    color: var(--grey);
+    border: 1px solid var(--darkpink);
+    border-radius: 3px;
     transform: scale(1.1);
 }
 
@@ -148,7 +135,8 @@
     right: 40%;
 }
 .gallery_link:hover, .gallery_link:active{
-    color: var(--grey);
+    border: 1px solid var(--darkpink);
+    border-radius: 3px;
     transform: scale(1.1);
 }
 @media screen and (max-width: 850px){
@@ -168,11 +156,17 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 70%;
     height: auto;
     border: 1px solid var(--darkpink);
     margin-top: 40px;
 }
+@media screen and (max-width: 1100px){
+    .image{
+        width: 60%;
+    }
+}
+
 #img1{
     grid-area: img1;
 }
@@ -195,33 +189,33 @@
 
 /*Membership card*/
 .membership{
-    display: flex;
+    display: flex; /*Display Grid & Grid-template-column don't work well with the Text & Image, the items aren't responsive  */
     background-color: var(--darkpink);
-    margin: 70px;
+    margin-top: 15px;
+    font-size: x-large;
 }
 .card_text{
     display: flex;
-    align-items: center;
+    align-items: center;/*To make the Text reponsive and stay centered */
     justify-items: center;
-    color: white;
+    color: var(--purple);
     padding: 40px;
-    font-size: larger;
+    font-family: "Copperplate Gothic Light";
+    font-weight: bold;
 }
 .bonus_card{
-    display: block;
-    width: 40%;
-    height: auto;
+    width: 350px;
+    height: 350px;
     margin: 20px;
 }
 @media screen and (max-width: 580px) {
     .membership{
-        flex-direction: column;
+        flex-direction: column; /*The flexible items ( Card_text & Image Bonus_card) are displayed vertically, as a column*/
     }
     .bonus_card{
         margin: 0 auto 20px auto;
     }
     .card_text{
         padding: 10px;
-        font-size: small;
     }
 }

@@ -11,8 +11,6 @@
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/kontakt.css">
 	<link rel="stylesheet" href="css/elements.css">
-	<!--Javascript-->
-	<script src="navbar.js"></script>
 	<!--Favicon-->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -30,31 +28,33 @@
 		<div class="item_group">
 			<!--Logo-->
 			<a id="logo" href="./index.html">
-				<img src="img-gallery/logo2.png">
+				<img src="ImgCover/logo2.gif">
 			</a>
 			<!-- Navbar-->
-			<div id="navbar" class="active">
+			<div id="navbar">
+				<!-- Close icon-->
+				<div id="close_icon">
+					<span class="iconify" data-icon="ion:close" data-width="40px" data-height="40px"></span>
+				</div>
 				<!-- Home-->
 				<a id="home" class="nav_item" href="./index.html" > Home </a>
 				<!-- Price list-->
 				<a id="cost" class="nav_item" href="./preisliste.html"> Preisliste </a>
 				<!-- Contact -->
-				<a id="contact" class="nav_item" href="./kontakt.html"> Kontakt </a>
+				<a id="contact" class="nav_item active_item" href="./kontakt.html"> Kontakt </a>
 				<!-- Galery -->
-				<a id="gallery" class="nav_item" href="./galerie.html"> Galerie </a>
+				<a id="gallery" class="nav_item" href="./galerie.php"> Galerie </a>
 				<!--Gift-->
 				<a id="gift" class="nav_item" href="./gutschein.html"> Gutscheine </a>
 			</div>
-			<!--Menu button-->
-			<div id="menu_icon" class="active">
-				<span class="iconify" data-icon="ion:menu" data-width="50px" data-height="50px"></span>
-			</div>
-			<div id="close_icon">
-				<span class="iconify" data-icon="ion:close" data-width="50px" data-height="50px"></span>
+			<!--Menu icon-->
+			<div id="menu_icon">
+				<span id="ruby_name"> RUBY Nails & Beauty </span>
+				<span class="iconify" data-icon="mdi:menu-down" data-width="50px" data-height="50px"></span>
 			</div>
 			<!--Image-->
 			<div class="banner_text">
-				<img id="banner_img" src="img-gallery/cover8.gif">
+				<img id="banner_img" src="ImgCover/cover8.gif">
 				<div id="welcome">
 					<div> Willkommen </div>
 					<div> RUBY Nails & Beauty </div>
@@ -140,7 +140,7 @@
 					<a class="q_link" href="./kontakt.html"> Kontakt </a>
 				</li>
 				<li>
-					<a class="q_link" href="./galerie.html"> Galerie </a>
+					<a class="q_link" href="./galerie.php"> Galerie </a>
 				</li>
 				<li>
 					<a class="q_link" href="./gutschein.html"> Gutscheine </a>
@@ -163,7 +163,7 @@
 			</div>
 			<!--Social links-->
 			<div>
-				<h3> Kontaktieren Sie uns hier: </h3>
+				<h3> Kontaktieren Sie uns </h3>
 				<p>
 					<b> Tel: </b> 
 					040 20960676
@@ -208,6 +208,7 @@
 		<div class="copyright">
 			© 2021 Ruby Nails and Beauty. Alle Rechte vorbehalten.
 		</div>
-	</footer>
 </body>
+<!--Javascript-->
+<script src="navBar.js"></script>
 </html>

@@ -9,74 +9,49 @@
     --green: #5BD963;
 }
 .coupon_gift{
-    display: grid;
-    grid-template-areas:
-        "coupon1 coupon2 coupon_text"
-        "coupon3 coupon3 coupon3"
-        "slogan slogan slogan";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 70px;
-}
-
-.coupon1{
-    grid-area: coupon1;
+    font-size: x-large;
 }
 .coupon2{
-    grid-area: coupon2;
+    width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; 
 }
-.coupon3{
-    grid-area: coupon3;
-}
+
 .coupon_text{
-    grid-area: coupon_text;
-    padding: 10px 30px 30px 30px;
     border: 1px solid var(--darkbrown);
+    width: 65%;
     background-color: var(--yellow);
     text-align: left;
-    margin: 0px auto 30px auto;
     border-radius: 10px;
-    width: 600px;
-    font-size: large;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 900px) {
-    .coupon_img{
-        grid-template-areas:
-            "coupon3 coupon3"
-            "coupon_text coupon_text"
-            "coupon1 coupon2"
-            "slogan slogan";
-    }
-}
-.coupon3{
-    width: 600px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 .slogan{
-    grid-area: slogan;
     text-align: center;
+    }
+
+@media screen and (max-width: 950px) {
+    .coupon1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .coupon2{
+        width: 500px;
+    }
 }
 
-@media screen and (max-width: 750px) {
-    .coupon_img{
-        margin-bottom: 20px;
-    }
-    .coupon_gift{
-        grid-template-areas:
-            "coupon1"
-            "coupon2"
-            "coupon_text"
-            "coupon3"
-            "slogan";
-    }
-    .coupon_gift > img{
-        width: 300px;
-        height: auto;
-    }
-    .coupon_text{
-        width: 300px;
+@media screen and (max-width: 550px) {
+    .coupon1, .coupon2{
+        width: 250px;
     }
 }
 

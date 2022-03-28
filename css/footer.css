@@ -12,13 +12,13 @@
 .info{
     background-color: var(--lightpink);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /*Space-evenly: Items will have equal space around them*/
     margin-top: 50px;
     color: black;
-    font-size: larger;
     padding: 20px 0px;
+    font-size: x-large;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1150px) {
     .info{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -41,6 +41,7 @@
 .social_link:hover, .social_link:active{
     color: white;
 }
+
 /* Styling Time & Quicklinks*/
 .time, #quicklinks{
     list-style-type: none;
@@ -94,6 +95,7 @@
     margin-left: 35px;
 }
 /*Animation*/
+    /*Keyframes: specifies the animation code.*/
 @keyframes fadeup{
     0% {
         transform: translateY(1.5vw);
@@ -106,7 +108,7 @@
 .chat_icon:hover{
     animation: wiggle 1s infinite;
 }
-/*Animation*/
+
 @keyframes wiggle{
     0% {
         transform: rotate(0deg);
@@ -135,4 +137,5 @@
 .copyright{
     text-align: center;
     padding: 5px 0px;
+    font-size: x-large;
 }
