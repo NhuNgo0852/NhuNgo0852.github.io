@@ -77,8 +77,7 @@
     border: 2px dotted var(--purple);
     background-color: var(--lightpink);
     border-radius: 10px;
-    gap: 1px; 
-    padding: 0px 10px 15px 10px;
+    justify-content: space-around;
 }
 /*Grid area*/
 #new{
@@ -151,10 +150,12 @@
     border: 2px dotted var(--purple);
     background-color: var(--lightpink);
     border-radius: 10px;
-    gap: 1px;
-    padding: 0px 10px 15px 10px;
+    justify-content: space-around;
 }
 @media screen and (max-width: 700px) {
+    .grid_price{
+        font-size: large;
+    }
     #others{
         grid-template-areas:
             "makeup makeup"

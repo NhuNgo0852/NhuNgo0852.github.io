@@ -51,7 +51,6 @@
     /*Justify-content: aligns the flexible container's items */
     align-items: center;
     font-size: xx-large;
-    font-weight: bold;
 }
 /*nav item*/
 .nav_item{
@@ -107,7 +106,7 @@
     }
 }
 /*+++++++++++++++ Max-width 550px */
-
+/* Dropdown menu */
 @media screen and (max-width: 550px) {
     .active_item::after{
         display: none;
@@ -115,11 +114,10 @@
 
     /*Navbar*/
     #navbar{
+        font-size: large;
         position: relative;
         display: none;
         flex-direction: column;
-        font-size: x-large;
-        animation: dropDown 1.5s;
     }
     .nav_item, #close_icon{
         animation: dropDown 3s;
@@ -135,17 +133,19 @@
             height: 100%;
         }
     }
-
+    
     #ruby_name{
-        display: inline-block;
+        display: block;
     }
 
     /* Menu & Close Icon*/
     #menu_icon{
-        display: block;
+        display: flex;
         background-color: var(--lightpink);
-        text-align: center;
         margin-bottom: 5px;
+        justify-content: center; 
+        align-items: center;
+        /* Justify-content & Align-items: work well in Display:flex*/
     }
     #close_icon{
         position: absolute;

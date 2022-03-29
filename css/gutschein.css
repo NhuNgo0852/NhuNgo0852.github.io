@@ -39,6 +39,9 @@
     }
 
 @media screen and (max-width: 950px) {
+    .coupon_gift{
+        font-size: large;
+    }
     .coupon1{
         display: block;
         margin-left: auto;

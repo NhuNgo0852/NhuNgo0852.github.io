@@ -19,6 +19,8 @@
     background-color: var(--grey);
     padding: 20px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 @media screen and (max-width: 620px) {
     #sale{
@@ -29,10 +31,6 @@
 }
 
 /*sale*/
-#sale{
-    align-items: center;
-    justify-content: center;
-}
 .sale30{
     font-size: xx-large;
     color: #F50C27;
@@ -54,8 +52,10 @@
         "img4 text4"
         "text5 img5"
         "img6 text6";
+    justify-content: center;
+    align-items: center;
 }
-/*media*/
+/*media*** Max-width: 1100px ****/
 @media screen and (max-width: 1100px) {
     .content{
         grid-template-areas:
@@ -73,7 +73,7 @@
             "text6";
     }
 }
-/*Text group*/
+/*The Ids in Class= Content*/
 #nail{
     grid-area: text1;
 }
@@ -95,26 +95,28 @@
 
 /******************************************/
 
-/*text in grid div*/
+/*text in every id of Content*/
 .text_group{
     position: relative; 
-    align-self: center;
-    justify-content: center;
     font-size: x-large;
 }
+@media screen and (max-width: 850px){
+    .text_group{
+        font-size: large;
+    }
+}
+
 .text{
-    margin: 30px;
-    padding: 20px;
+    padding: 0px 10px 0px 30px;
 }
 /******************************************/
 
 /*link price & gallery*/
 .price_link, .gallery_link{
     position: absolute; /*Position of Price & Gallery link is fix because of Position relative of Parents Div (.text_group)*/
-    top: 80%;
+    top: 100%;
     text-decoration: none; /*To make blue color and line of Link are invisible*/
     color: var(--darkpink);
-    padding: 20px;
     cursor: pointer;
     transition: 0.25s ease-in-out;
     font-weight: bold;
@@ -124,26 +126,25 @@
 .price_link:link, .price_link:visited{
     left: 10%;
 }
-.price_link:hover, .price_link:active{
+.price_link:hover, .gallery_link:hover, .gallery_link:active, .price_link:active{
     border: 1px solid var(--darkpink);
     border-radius: 3px;
+    padding: 0 5px;
     transform: scale(1.1);
 }
 
 /*link gallery*/
 .gallery_link:link, .gallery_link:visited{
-    right: 40%;
+    right: 50%;
 }
-.gallery_link:hover, .gallery_link:active{
-    border: 1px solid var(--darkpink);
-    border-radius: 3px;
-    transform: scale(1.1);
-}
+/*************** Max-with: 850px **************/
 @media screen and (max-width: 850px){
     .gallery_link:link, .gallery_link:visited{
-        right: 40%;
+        right: 60%;
     }
 }
+
+/*************** Max-with: 450px **************/
 @media screen and (max-width: 450px){
     .gallery_link:link, .gallery_link:visited{
         right: 30%;
@@ -161,7 +162,7 @@
     border: 1px solid var(--darkpink);
     margin-top: 40px;
 }
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 850px){
     .image{
         width: 60%;
     }
@@ -198,10 +199,8 @@
     display: flex;
     align-items: center;/*To make the Text reponsive and stay centered */
     justify-items: center;
-    color: var(--purple);
+    color: white;
     padding: 40px;
-    font-family: "Copperplate Gothic Light";
-    font-weight: bold;
 }
 .bonus_card{
     width: 350px;
@@ -210,10 +209,15 @@
 }
 @media screen and (max-width: 580px) {
     .membership{
-        flex-direction: column; /*The flexible items ( Card_text & Image Bonus_card) are displayed vertically, as a column*/
+        flex-direction: column; 
+        /*The flexible items ( Card_text & Image Bonus_card) are displayed vertically, as a column*/      
+        font-size: large;
     }
     .bonus_card{
-        margin: 0 auto 20px auto;
+        width: 250px;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
     }
     .card_text{
         padding: 10px;
