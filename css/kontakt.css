@@ -14,8 +14,14 @@
     text-align: center;
 }
 #gg_map > iframe{
-    width: 350px;
-    height: 300px;
+    width: 800px;
+    height: 600px;
+}
+@media screen and (max-width: 550px){
+    #gg_map > iframe{
+        width: 350px;
+        height: 300px;
+    }
 }
 /******************************************/
 
@@ -29,16 +35,11 @@
     margin-top: 50px;
     font-size: x-large;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 850px) {
     #contact_info{
         font-size: large;
     }
-    #gg_map > iframe{
-        width: 600px;
-        height: 400px;
-    }
 }
-
 /*Social and Icon Whatsapp & Instagram*/
 #social{
     align-self: center;

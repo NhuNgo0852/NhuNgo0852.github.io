@@ -10,38 +10,6 @@
     --green: #5BD963;
 }
 
-/*giveaway*/
-#sale{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 70px;
-    font-size: x-large;
-    background-color: var(--grey);
-    padding: 20px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-@media screen and (max-width: 620px) {
-    #sale{
-        font-size: large;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-}
-
-/*sale*/
-.sale30{
-    font-size: xx-large;
-    color: #F50C27;
-    margin-right: 20px;
-}
-.sale_text{
-    list-style-type: none;
-    margin-bottom: 20px;
-}
-/************************************/
-
 /*content*/
 .content{
     display: grid;
@@ -135,7 +103,7 @@
 
 /*link gallery*/
 .gallery_link:link, .gallery_link:visited{
-    right: 50%;
+    right: 40%;
 }
 /*************** Max-with: 850px **************/
 @media screen and (max-width: 850px){
@@ -207,7 +175,7 @@
     height: 350px;
     margin: 20px;
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 850px) {
     .membership{
         flex-direction: column; 
         /*The flexible items ( Card_text & Image Bonus_card) are displayed vertically, as a column*/      

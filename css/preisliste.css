@@ -9,18 +9,6 @@
     --yellow: #F2E0C9;
     --green: #5BD963;
 }
-/*Price list*/
-.price_list > h2{
-    margin-top: 30px;
-    text-align: center;
-}
-/*link Price*/
-.main_menu{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    margin: 0px 50px;
-    text-align: center;
-}
 /******************************************/
 
 /*Box list*/
@@ -28,11 +16,20 @@
     margin-top: 70px;
     text-align: center;
     font-size: x-large;
+    justify-content: center;
+    align-items: center;
 }
+
+.main_menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin: 0px 40px;
+}
+
 /*Box*/
 .box{
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px 5px;
     padding: 10px 5px;
     text-decoration: none;
 }
@@ -54,6 +51,12 @@
     justify-content: center;/*align the flex items at the center of the container*/
     font-size: x-large;
 } 
+/*Price list*/
+.price_list > h2{
+    margin-top: 30px;
+    text-align: center;
+}
+
 /******************************************/
 
 /*Title*/
@@ -77,7 +80,9 @@
     border: 2px dotted var(--purple);
     background-color: var(--lightpink);
     border-radius: 10px;
-    justify-content: space-around;
+    padding-bottom: 20px;
+    justify-content: center;
+    /*justify-content: define the alignment along the main axis.*/
 }
 /*Grid area*/
 #new{
@@ -125,12 +130,14 @@
 .list{
     text-align: right;
     list-style-type: none;
-    padding-right: 5px;
+    justify-self: center;
 }
 .list_name{
     text-align: left;
     list-style-type: none;
-    padding-left: 5px;
+    justify-self: start;
+    /*Justify-self: sets the justification of an element within its containing block*/
+    padding-left: 10px;
 }
 /******************************************/
 
@@ -150,7 +157,8 @@
     border: 2px dotted var(--purple);
     background-color: var(--lightpink);
     border-radius: 10px;
-    justify-content: space-around;
+    padding-bottom: 20px;
+    justify-items: center; /*Justify-items: align grid items along the row (inline) axis*/
 }
 @media screen and (max-width: 700px) {
     .grid_price{
@@ -245,9 +253,4 @@
 }
 .euro10{
     grid-area: euro10;
-}
-.t_padding{
-    justify-self: center;
-    padding-left: 5px;
-    padding-right: 5px;
 }

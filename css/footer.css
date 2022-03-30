@@ -12,7 +12,7 @@
 .info{
     background-color: var(--lightpink);
     display: flex;
-    justify-content: space-evenly; /*Space-evenly: Items will have equal space around them*/
+    justify-content: space-around; 
     margin-top: 50px;
     color: black;
     padding: 20px 0px;
