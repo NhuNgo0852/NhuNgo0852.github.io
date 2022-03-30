@@ -79,7 +79,7 @@
 				$dir = __DIR__  . '\img-gallery'; // dir: directory-returns an instance of the Directory class
 				$files = scandir($dir); // scandir: returns an array of files
 
-				array_splice($files, 0, 2); 
+				//array_splice($files, 0, 2); 
 				// removes selected elements from an array ( . in position 0 & .. in position 1 ) of Array $files
 				
 				//	count(): Returns the number of elements in the array
