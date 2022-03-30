@@ -13,7 +13,7 @@
     background-color: var(--lightpink);
     display: flex;
     flex-direction: row nowrap;
-    justify-content: space-evenly; /*Space-evenly: Items will have equal space around them*/
+    justify-content: space-around; /*Space-evenly: Items will have equal space around them*/
     margin-top: 50px;
     color: black;
     padding: 20px 0px;
@@ -23,13 +23,11 @@
     .info{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding-left: 40px;
     }
 }
 @media screen and (max-width: 550px) {
     .info{
         grid-template-columns: 1fr;
-        padding-left: 40px;
         font-size: large;
     }
 }
