@@ -114,7 +114,7 @@
 	</main>
 	<!--FOOTER-->
 	<footer>
-		<div class="info">
+		<div id="info">
 			<!--Quick links-->
 			<div id="quicklinks">
 				<h3> Quick links </h3>
@@ -141,7 +141,7 @@
 				</li>
 			</div>
 			<!--Öffnungzeiten-->
-			<div class="time">
+			<div id="time">
 				<h3> Öffnungzeiten</h3>
 				<li> Montag-Freitag </li>
 				<li> 10:00-19:00 </li>
@@ -150,7 +150,7 @@
 				<li> 10:00-18:00 </li>
 			</div>
 			<!--Social links-->
-			<div>
+			<div id="contact_us">
 				<h3> Kontaktieren Sie uns </h3>
 				<p>
 					<b> Tel: </b> 

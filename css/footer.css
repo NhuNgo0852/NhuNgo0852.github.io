@@ -9,27 +9,33 @@
     --green: #5BD963;
 }
 /*footer*/
-.info{
+#info{
     background-color: var(--lightpink);
     display: flex;
     flex-direction: row nowrap;
-    justify-content: space-around; /*Space-evenly: Items will have equal space around them*/
+    justify-content: space-evenly; /*Space-evenly: Items will have equal space around them*/
     margin-top: 50px;
     color: black;
     padding: 20px 0px;
     font-size: x-large;
 }
 @media screen and (max-width: 1120px) {
-    .info{
+    #info{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
     }
 }
 @media screen and (max-width: 550px) {
-    .info{
+    #info{
         grid-template-columns: 1fr;
         font-size: large;
     }
+}
+/******************************************/
+
+#quicklinks, #time, #cotact_us, #address{
+    justify-self: start;
 }
 /******************************************/
 
@@ -43,7 +49,7 @@
 }
 
 /* Styling Time & Quicklinks*/
-.time, #quicklinks{
+#time, #quicklinks{
     list-style-type: none;
 }
 .q_link:link, .q_link:visited{
