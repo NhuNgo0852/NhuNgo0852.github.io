@@ -63,7 +63,7 @@
 /**********************************/
 
 /* Animation of Underline*/
-.active_item::after{
+.active_item::after{ /* ::after _inserts something after the content of each selected element*/
     position: absolute;
     content: "";
     background-color: var(--lightpink);

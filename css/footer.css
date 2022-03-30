@@ -8,7 +8,6 @@
     --yellow: #F2E0C9;
     --green: #5BD963;
 }
-/*test*/
 /*footer*/
 #info{
     background-color: var(--lightpink);
@@ -34,11 +33,6 @@
 }
 /******************************************/
 
-#quicklinks, #time, #contact_us, #address{
-    justify-self: start;
-}
-/******************************************/
-
 /*Social link & icon*/
 .social_link{
     text-decoration: none;
@@ -60,14 +54,40 @@
     color: var(--lightbrown);
 }
 /******************************************/
+/* Open WhatsApp*/
+#open_app{
+    position: fixed;
+    right: 0;
+    bottom: 30%;
+    transform-origin: 100% bottom; /*100% length of & and 100% (bottom) of y get rotated*/
+    transform: rotate(-90deg);
+    font-size: xx-large;
+    color: white;
+    background-color: var(--green);
+    padding: 5px;
+}
+
+#chat_icon{
+    display: none;
+}
+
+/* Close WhatsApp*/
+#close_app{
+    position: fixed;
+    bottom: 30%;
+    right: 0;
+    color: var(--green);
+    background: rgba(255, 255, 255, 0.3);
+    animation: fadeup .7s forwards;
+}
 
 /*Chat pop-up*/
 .chat:link, .chat:visited{
     text-decoration: none;
     color: var(--green);
     position: fixed;
-    bottom: 10px;
-    right: 40px;
+    bottom:5%;
+    right: 3%;
 }
 .hallo{
     border: 1px solid var(--green);
@@ -146,6 +166,9 @@
     font-size: x-large;
 }
 @media screen and (max-width: 550px) {
+    #open_app{
+        font-size: x-large;
+    }
     .copyright{
         font-size: large;
     }
