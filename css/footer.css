@@ -58,7 +58,7 @@
 #open_app{
     position: fixed;
     right: 0;
-    bottom: 35%;
+    top: 30%;
     transform-origin: 100% bottom; /*100% length of & and 100% (bottom) of y get rotated*/
     transform: rotate(-90deg);
     font-size: xx-large;
@@ -75,7 +75,7 @@
 /* Close WhatsApp*/
 #close_app{
     position: fixed;
-    bottom: 30%;
+    top: 30%;
     right: 0;
     color: var(--green);
     background: rgba(255, 255, 255, 0.3);
@@ -87,7 +87,7 @@
     text-decoration: none;
     color: var(--green);
     position: fixed;
-    bottom:5%;
+    top:45%;
     right: 3%;
 }
 .hallo{
