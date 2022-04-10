@@ -28,7 +28,7 @@
 		<div class="item_group">
 			<!--Logo-->
 			<a id="logo" href="./index.html">
-				<img src="ImgCover/logo2.gif">
+				<img src="ImgCover/logo2.webp">
 			</a>
 			<!-- Navbar-->
 			<div id="navbar">
@@ -55,7 +55,7 @@
 			</div>
 			<!--Image-->
 			<div class="banner_text">
-				<img id="banner_img" src="ImgCover/cover3.gif">
+				<img id="banner_img" src="ImgCover/cover3.webp">
 				<div id="welcome">
 					<div> Willkommen </div>
 					<div> RUBY Nails & Beauty </div>
@@ -75,6 +75,20 @@
 	<main>
 		<!--Image gallery-->
 		<div class="img_gallery">
+			<!-- Full Image -->
+			<div id="full_img">
+				<div id="close_img" class="display_icon">
+					<span class="iconify" data-icon="ion:close-sharp" data-width="40px" data-height="40px"></span>
+				</div>
+				<img id="current_img">
+				<div id="prev_img" class="display_icon">
+					<span class="iconify" data-icon="ion:chevron-back-sharp" data-width="40px" data-height="40px"></span>
+				</div>
+				<div id="next_img" class="display_icon">
+					<span class="iconify" data-icon="ion:chevron-forward-sharp" data-width="40px" data-height="40px"></span>
+				</div>
+			</div>
+			<!-- Thumbnail Image gallery -->
 			<?php
 				$dir = (__DIR__) . '/img-gallery'; // dir: directory-returns an instance of the Directory class
 				$files = scandir($dir); // scandir: returns an array of files
@@ -85,10 +99,10 @@
 				//	count(): Returns the number of elements in the array
 				for($x = 0; $x < count($files); $x++){
 					echo '
-						<a class="thumbnail" href="img-gallery/' . $files[$x] .'">
-							<img class="photo" onclick="openImage" src="img-gallery/' . $files[$x] .'" alt="">
-						</a>
-						'; // . $files . glue Value ($files) and String (<a...a>) together
+						<div class="thumbnail" href="img-gallery/' . $files[$x] .'">
+							<img class="photo" src="img-gallery/' . $files[$x] .'" alt=" '. $files[$x] .' ">
+						</div>
+						'; // . $files . glue Value ($files) and String in (<a...a>) together
 				}
 			?>
 		</div>
@@ -207,4 +221,5 @@
 </body>
 	<!--Javascript-->
 	<script src="navBar.js"></script>
+	<script src="galerie.js"></script>
 </html>

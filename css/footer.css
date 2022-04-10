@@ -75,7 +75,7 @@
 /* Close WhatsApp*/
 #close_app{
     position: fixed;
-    top: 15%;
+    top: 20%;
     right: 0;
     color: var(--green);
     background: rgba(255, 255, 255, 0.3);

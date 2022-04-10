@@ -25,8 +25,59 @@
     }
 }
 /******************************************/
-#close_img, #preview, #next{
+
+/* Full Image */
+#full_img{
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%); 
+    z-index: 1; /* Sit on top */
+    /*If 2 positioned elements overlap without "z-index" specified, 
+    the element positioned last in the HTML code will be shown on top. */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#current_img{
+    /* Center Image */
+    display: block;
+    margin: auto;
+    max-height: fit-content;
+    max-width: 700px;
+    height: 100%;
+    width: auto;
+}
+@media screen and (max-width: 450px) {
+    #current_img{
+        width: 100%;
+    }
+}
+/*****************************************/
+
+/*close, prev & next Icon*/
+.display_icon{
+    position: absolute;
+    display: block;
+    color: white;
+}
+.display_icon:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#close_img{
+    top: 5%;
+    right: 5%;
+}
+#prev_img{
+    top: 50%;
+    left: 5%
+}
+#next_img{
+    top: 50%;
+    right: 5%
 }
 
 /******************************************/
@@ -39,6 +90,7 @@
     hidden - The overflow is clipped and the rest of the content will be invisible*/
 }
 .photo{
+    cursor: pointer;
     width: 100%;
 }
 .photo:hover{
