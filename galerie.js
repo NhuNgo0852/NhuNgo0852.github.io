@@ -1,5 +1,7 @@
 const fullImg = document.getElementById("full_img");
 const currentImg = document.getElementById("current_img");
+const htmlElement = document.getElementsByTagName("html")[0];
+// document.getElementByTagName: collection of Elements with the Tag "Html", [0]: to get the first Element 
 
 const photos = document.getElementsByClassName("photo");
 var imageIndex;
@@ -11,8 +13,9 @@ photosArray.forEach(function (photo, i) { // The Function run for each array Ele
     photo.addEventListener("click", function () {
         // This Function is called whenever the Photo is clicked,
         imageIndex = i;
-        fullImg.style.display = "block";
+        fullImg.style.display = "flex";
         currentImg.src = this.src;
+        htmlElement.style.overflowY = "hidden";
     });
 });
 
@@ -42,4 +45,5 @@ const closeImg = document.getElementById("close_img");
 closeImg.addEventListener("click", closeImage);
 function closeImage() {
     fullImg.style.display = "none";
+    htmlElement.style.overflowY = "auto";
 }
